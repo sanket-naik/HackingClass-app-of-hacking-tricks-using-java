@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2360dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Exploring NMAP"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Nmap (Network Mapper) is a security scanner originally written by Gordon Lyon used to discover Host and services on a computer network, thus creating a “map” of the network. To accomplish its goal, Nmap sends specially crafted packets to the target host and then analyzes the responses. The software provides features for probing computer networks such as host discovery, service and operating system detection, and other in-depth system information. These features are extensible by scripts that provide more advanced service detection, vulnerability detection, and other information. Nmap is also capable of adapting to network conditions including latency and network congestion during a scan.\n\nIn this tutorial, we are going to explore how to use Nmap to scan a network. To start off, here’s a brief overview of what Nmap is mainly used for. Among other things, Nmap will scan our target network and:\n\nDisplay a list of connected clients\nList open ports and available services\nGather information about client systems\n\nNow let’s get started with stripping the network :-)\n\nBelow you will find several different uses and scan parameters of Nmap. First, make sure you are connected to the network that you want to scan. Having done that, you may now proceed with the different scans.\n\nSimple Scan\nThis method is used to scan the entire network and list all of the connected clients.\n1. Open a terminal\n2. Type “nmap -sS [host ip address]/24”\nReplace [host ip address] with your router’s IP address Example: “nmap -sS 192.168.0.1/24”\n\nClient Scan\nThis method is used to scan a specific client.\n1. Open a terminal\n2. Type “nmap -sS\nclient\n”\nReplace\nclient\nwith the ip address of the client Example: “nmap -sS 192.168.0.5”\n\nOS Scan\nThis method is used to list a client’s operating system information in the scan results.\n1. Open a terminal\n2. Type “nmap -sS\nclient\n-O”\nReplace\nclient\nwith the ip address of the client Example: “nmap -sS 192.168.0.5 -O”\n\nSystem Scan\nThis method is used to list information associated with a client’s system.\n1. Open a terminal\n2. Type “nmap -sS\nclient\n-A”\nReplace\nclient\nwith the ip address of the client Example: “nmap -sS 192.168.0.5 -A”\n\nService Scan This method is used to display a list detailed information about services running on a client’s system.\n1. Open a terminal\n2. Type “nmap -sS\nclient\n-sV”\nReplace\nclient\nwith the ip address of the client Example: “nmap -sS 192.168.0.5 -sV”\n\nPort Scan\nThis method is used to check the status of a specific port\n1. Open a terminal\n2. Type “nmap -sS\nclient\n-p [port]”\nReplace\nclient\nwith the ip address of the client Replace [port] with the port number you want to check\nExample: “nmap -sS 192.168.0.5 -p 22”\n\nPort Range Scan\nThis method is used to check the status of a specific port range.\n1. Open a terminal\n2. Type “nmap -sS\nclient\n-p [port range] Replace\nclient\nwith the ip address of the client Replace [port range] with the port range you want to check\nExample: “nmap -sS 192.168.0.5 -p 22-80”\n\nNow that you know a thing or two about Nmap, I recommend combining the different scan parameters to generate consolidated scan results. This will improve the efficiency of your scans and help you generate detailed, more complete scan reports. As always, PenTesting is about doing and not just reading, so experiment with various parameters, try as many as you can and be sure to checkout the inbuilt help menu of Nmap for even more options.\n\nAs an example, you could scan the entire network for detailed information about clients, systems, services, and ports by using the following command: “nmap -sS [host ip address]/24 -O -A -sV”"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

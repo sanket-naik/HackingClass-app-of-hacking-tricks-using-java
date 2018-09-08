@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1429dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Introduction To Metasploit"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/cce" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Metasploit is a tool developed by HD Moore in 2003. In a nutshell, it is used to exploit vulnerabilities in daemons(background) running on an open port. It is extremely powerful tool that is not easy to control. In many ways, it is the quintessential hacker tool. It is powerful, flexible, free, and loaded with awesomeness. It is without a doubt the coolest offensive tool covered in this website. Ask any professional PenTester : “What is the single most useful Tool when it comes to Hacking?”, their answer will always be “Metasploit”.\nBefore Diving into this heavenly tool, here are a few things that are often used when using MetaSploit :\n\nWhat is a vulnerability?\nA vulnerability is a security hole in a piece of software, hardware or operating system that provides a potential angle to attack the system. Not all vulnerabilities are dangerous and not all of them are exploitable. They can be often found in outdated applications, services or operating systems. Now that we understand what being exploitable means, what is an exploit itself?\n\nWhat are exploits?\nExploits are highly specialized small programs, whose only purpose is to take advantage of a vulnerability and deliver a payload, which will grant attacker the control. Metasploit is a great tool that has a vast number of exploits. I will cover using some of them later on. So, if it’s purpose is to deliver a payload, what is payload?\n\nWhat is a payload?\nPayload is delivered by exploit and is used to control the remote system.Think of it this way: Exploit is like terrorist that is carrying a bomb in his backpack. He enters the system and leaves his backpack there. Most popular and widely known payload is meterpreter, that has a lot of features. With it you can Browse remote files, downlaod them, upload your own, capture keystrokes, take screenshots, open DOS, and pivot to another machine as well. Through meterpreter, you can pivot and attack machines in networks that are not your own.\n\nAn example: Buffer Overflow :\nBuffer Overflow is a common method used to make exploits. How does it work?\nImagine a glass of water. You’re thirsty and you want to drink it. You keep pouring more into the glass, but at one point, the water will have filled the glass and it will leak outside of it, on your carpet. This is exactly what buffer overflow is. It happens when a program or file writes data to a buffer and overflows it. It leaks into adjacent memory and overrides it. That way we get our malicious part to execute.\n\nMetasploit and all of it’s exploits are written in Ruby. Metasploit has four main interfaces.\n-MsfCli\n-MsfConsole\n-MsfGui\n-Armitage\n\nI will be getting into each one of those and more in the next tutorials. You can run metasploit in both Windows and Linux.\nWindows – You can download it from:\nhttp://www.metasploit.com/\nBackTrack – Metasploit, among many other tools comes pre-installed with this operating system.\n\nThe first step to success is a small one. Like I always say, Penetration Testing is something you just cannot learn without getting your hands dirty. Metasploit itself is an incredibly volatile tool, i.e. it’s literally updated several times a day with new exploits and features. An exploit that can compromise a million systems today might be totally useless tomorrow, and one that doesn’t exist today might effect even more tomorrow. Metasploit does have a GUI, but in the following tutorials I use only console commands since it gives you a sense of what exactly is happening, keeps you in the loop – Something that is not so obvious when using the GUI.\nSo, move on to the next tutorial to get started right away !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="24dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

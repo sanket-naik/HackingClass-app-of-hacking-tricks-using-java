@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1450dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Command Crash"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccf" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Now you should be ready to fire up Metasploit. Metasploit should already be installed on the machine that you’re using(Windows or Linux), so to start the console, simply run “msfconsole”.\n\nBefore getting to exploits straight away, it is useful to understand what some Metasploit commands do. Below are some of the command that are used in almost every exploit procedure. It is vital that you get familiar with these : (Below I’ve listed example commands followed by their instructions in the next lines)\n\n• use exploitname\nTells Metasploit to use the exploit with a speci?ed name.\n\n• set RHOST hostname_or_ip\nWill instruct Metasploit to target the speci?ed remote host.\n\n• set RPORT host_port\nSets the port that Metasploit will connect to on the remote host.\n\n• set PAYLOAD generic/shell_bind_tcp\nAs an example, this command sets the payload to a generic one that will give you access to a shell when a service is exploited.\n\n• set LPORT local_port\nSets the port number that the payload will open on the server when an vulnerability is successfully exploited. It is important that this port number be a port that can be opened on the server (i.e. it is not in use by another service and not reserved for administrative use), so set it to a random 4 digit number greater than 1024, and you should be ?ne. You’ll have to change the number each time you successfully exploit a service as well.(All ports below number 1024 are reserved).\n\n• exploit\nTyping “exploit” – starts to exploits the service. Another version of exploit, “rexploit” reloads your exploit code and then executes the exploit. This allows you to try minor changes to your exploit code without restarting the console.\n\n• show options\nThis command Will show you options that you have set and possibly ones that you might have forgotten to set. Each exploit and payload comes with its own options that you can set. “Show exploits” and “show payloads” can also be used to show all exploits and payloads that are built in to Metasploit.\n\n• help\n“help” Will give you basic information on commands not listed here. All that’s left is to issue a series of simple commands. The commands below use the example exploit to attack a the IP address 123.44.32.1 on port 3000 with the “shell_bind_tcp” payload. When it is successful(If it is successful) it will open port 9485 on the target machine and Metasploit will show you the command shell (Meaning you are in the system, which you just compromised). Below are all the commands that are used to carry out this example exploit. (Note, this is just an example, there’s not an actual exploit called example)\n\nuse example\nset RHOST 123.44.32.1\nset RPORT 3000\nset PAYLOAD generic/shell_bind_tcp\nset LPORT 9485\nexploit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="22dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

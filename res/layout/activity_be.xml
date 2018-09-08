@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1875dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Hacking Facebook"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbe" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="A note for the newcomers – Contrary to popular belief there doesn’t exist some secret software where one can just put in an email id, press “Enter” and all the passwords associated with that account magically appear. Hacking facebook, like any other hack takes time, skill and effort. Also, the methods are much the same for hacking any type of account for that matter.\n\nThere are 3 main methods used when it comes to Hacking Facebook accounts. Briefly,They are :\n\n1.Keyloggers : Making the victim open up his account on a system with a keylogger attached/ Sending a remote keylogger to the victim.\n2.Phishing : Making a fake login page and having the entered details sent to you.(This has been explained in the beginner section).\n3.Social Engineering : This is just a fancy term for making the victim give up vital information in a supposedly casual conversation. The information may be the user’s recovery question’s answer, which can then be used to take over the account via : “Forgot your password? Click Here!” Button.\n\nSome time ago, Facebook developers patched in a new security feature. In a nutshell, if facebook detects that your IP address is different from the usual(previously used) IP addresses, it may stop you from logging in without further identitiy verificiation which may be, for example: an SMS code. Now this can potentially effect every type of hack, but if it is infact possible there is only one way to know- By doing it. Hope for the best, Prepare for the worst.\n\n1.Keyloggers:\nA Keylogger is type of software that usually runs in the background, without the knowledge of an innocent victim and secretly records their actions. A wide variety of functionality is offered by various products : Almost all record every keystroke on the keyboard in a simple text file format, some record mouse clicks and pointer locations, some record folders and files opened and some even take screenshots at regular intervals.\nMost of the keyloggers provide an option whether to store the text file locally send it to an FTP server or your email id. They can be installed and set up relatively easily like any other program. Once setup, they usually go into hiding as a background process leaving no trace on the surface and starting up automatically when the operating system starts.\n\nFor some reason people seem to avoid or look over keyloggers, I can give you my word this is the best and easiest method for hacking any type of account there is, so definitely check this out. In our case, we want the victim to login to their facebook account on a compromised system, one that has a stealthy keylogger installed. There are two ways to go about this :Installing a keylogger on your system and having them use it to login to their FB account, or if you have temporary access to their system- Installing it on their computer and having the log files sent to you by email or FTP.\nWhichever way you prefer, the method is the same. Download a keylogger, follow the smooth setup instructions as you would when installing anything, customize settings according to your preference and Let it rip !\nI have personally tried and tested the following keyloggers, you can choose any of these randomly since they all seem to do the job :\n\n(i)Actual key-logger – Download from http://www.actualkeylogger.com/download-free-key-logger.html\n(ii)Home key-logger – Download from http://www.kmint21.com/download.html\n(iii) REFOG Free key-logger – Download from https://www.refog.com/download.html\n\n(P.S- Certain full versions of very good keyloggers are available as torrents from websites like isohunt.com , kickass.to but these torrents are illegal and we shouldn’t use them)\n\n2.Phishing : This method has been described in great detail in the beginner section. Follow the instructions carefully while using facebook.com instead of gmail.com.\n\n3.Social Engineering :\nFacebook uses security questions as a recovery method, almost everyone sets it up to a personal question like :\n“Where were you born? ”\n“What was your first pets name? ”\n\nSocial engineering is a term that describes a non-technical kind of intrusion that relies heavily on human interaction and often involves tricking other people to break normal security procedures.\nA social engineer runs what used to be called a “con game.” For example, a person using social engineering to break into a computer network might try to gain the confidence of an authorized user and get them to reveal information that compromises the network’s security. Social engineers often rely on the natural helpfulness of people as well as on their weaknesses. They might, for example, call the authorized employee with some kind of urgent problem that requires immediate network access.\nAppeal to vanity, appeal to authority, appeal to greed, and old-fashioned eavesdropping are other typical social engineering techniques.\n\nFor this method to work, you need to know the person whos account you want to hack. In fact, you need to know them well enough, such that it doesn’t seem suspicious when you carefully try to work up their recovery questions into your conversation and get them to answer it casually.\nAfter that,using the “Forgot your password? Click Here!” Button one can simply turn over an account’s user. But even after this, your work is not done yet. Nowadays facebook has implemented a 24 hour delay before recovering the account and logging in, So if the victim happens to log in during that period they can reverse the process in seconds. Not only do you need careful planning, but also careful timing.\nFacebook uses a verification method during recovery -if the victim’s email and phone number are no longer functional it asks to put in another phone number. If you can somehow get a hold of their cell phones or email accounts their account is yours, otherwise the process may be slow and fruitless."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

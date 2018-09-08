@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Hacking Class</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_flash" translatable="false">Flash</string>
+    <string name="title_activity_tutorial" translatable="false">Tutorial</string>
+    <string name="title_activity_hacking" translatable="false">Hacking</string>
+    <string name="title_activity_rules">Rules</string>
+    <string name="title_activity_types" translatable="false">Types</string>
+    <string name="title_activity_rate" translatable="false">Rate</string>
+    <string name="title_activity_bigner" translatable="false">MainActivity</string>
+    <string name="title_activity_zipbomb" translatable="false">Zipbomb</string>
+    <string name="title_activity_skilled">Skilled</string>
+    <string name="title_activity_expert" translatable="false">Expert</string>
+    <string name="title_activity_aa" translatable="false">Aa</string>
+    <string name="title_activity_ab" translatable="false">Ab</string>
+    <string name="title_activity_" translatable="false">Ac</string>
+    <string name="title_activity_acc" translatable="false">Acc</string>
+    <string name="title_activity_ad" translatable="false">Ad</string>
+    <string name="title_activity_ae">Ae</string>
+    <string name="title_activity_af">Af</string>
+    <string name="title_activity_ag">Ag</string>
+    <string name="title_activity_ah">Ah</string>
+    <string name="title_activity_ai">Ai</string>
+    <string name="title_activity_ba">Ba</string>
+    <string name="title_activity_bb">Bb</string>
+    <string name="title_activity_bc">Bc</string>
+    <string name="title_activity_bd">Bd</string>
+    <string name="title_activity_be">Be</string>
+    <string name="title_activity_bf">Bf</string>
+    <string name="title_activity_bg">Bg</string>
+    <string name="title_activity_bi">Bi</string>
+    <string name="title_activity_bh">Bh</string>
+    <string name="title_activity_bj">Bj</string>
+    <string name="title_activity_ca">Ca</string>
+    <string name="title_activity_cb">Cb</string>
+    <string name="title_activity_cc">Cc</string>
+    <string name="title_activity_cd">Cd</string>
+    <string name="title_activity_ce">Ce</string>
+    <string name="title_activity_cf">Cf</string>
+    <string name="title_activity_cg">Cg</string>
+    <string name="title_activity_ch">Ch</string>
+    <string name="title_activity_ci">Ci</string>
+    <string name="title_activity_cj">Cj</string>
+    <string name="title_activity_ck">Ck</string>
+    <string name="title_activity_cl">Cl</string>
+     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

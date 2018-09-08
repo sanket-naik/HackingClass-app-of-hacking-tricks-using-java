@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1651dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Disabling Antivirus"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccl" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Installing antivirus software on your computer is an excellent way to deter hackers. Conversely, disabling antivirus software is an excellent way to totally exploit a system until nothing is left, while making sure we don’t leave a trace. If a hacker can somehow get in a system under the antivirus’s nose it is very likely that he\she will get caught if the antivirus scans the system for malicious files and connections. Protecting oneself is more important than exploiting the victim.\n\nMeterpreter gives us complete control over the system. We can send commands to install a keylogger, jump to other computers on the network, look through all the files and directories, start and close programs at our will and tons more. Here, we’ll be looking at the commands we can use to disable antivirus protection.\n\nIf you have an antivirus on your computer, try to close it from the tray icon or the GUI. You’ll see that it asks you to confirm your action. Now open up task manager and try to kill the antivirus process file (something like avg.exe), (usually) you’ll find that now no questions are asked and the antivirus process is killed instantly. That’s because the admin has more control over the system than the antivirus, which is exactly what we’ll use to carry out this hack.\n\nAgain, this tutorial is assuming that you’ve already embedded a Meterpreter listener on the victim’s computer.\n\nFirst of all, we need to escalate our privileges. Usually, when we hook up a listener (Meterpreter) on the victim’s system, the listener have the same privileges as the user. Nowadays, more and more operating softwares (Windows 8, for example) give reduced privileges to a user, by default. This is to make sure that the user cannot tamper with important files (such as those in the system32 folder) and to add another layer of protection from hacking. To carry out this hack we need admin (or sysadmin) privileges.\n\nStep 1: Get the user ID\nBefore attempting to increase our privileges, let’s check to see if we’re already the admin. Why? Because, sometimes being lazy and efficient are the same. It’s unlikely, but on the off chance that we do turn out to be admin, we can get straight to the hack. Type:\n\nmeterpreter > getuid\n\nNow this should return the ID of the user currently logged in. Depending on the OS this statement gives different results. What we’re looking for are the keywords “admin”, “sysadmin”, “authority”, “system”. These are bound to be associated with an account with admin privileges. Chances are that we’ll get something that’s not like this. In the next step we take care of that.\n\nStep 3: Escalate Privileges\nThis is quite easy. Just one command:\n\nmeterpreter > getsystem\n\nOne of the most common returns to the getuid after this command is\n\nServer username : NT Authority\System\n\nThis is what we’re looking for ideally. But if you get any of the above keywords, that’s just fine as well. You’ll notice that Metasploit responds with something like “…got system (with technique 1)”if everything went as planned. There are multiple in built functions that metasploit uses to try to increase privileges when ‘getsystem’ command is sent. It simply tries out all of them to see which one works.\n\nStep 5: Kill the antivirus\nNow we have the power of the admin. What do we want next? More power, of course. Metasploit has a Ruby script called killav.rb which looks for any antivirus process that are running and shuts them down. It works on almost all of the antiviruses so we can be reasonably sure that it’ll do the job. (If it doesn’t, we could alternatively look for running processes and try to kill them manually). Let’s run the script by typing:\n\nmeterpreter > run killav.rb\n\nYou should see an output like “Killing antivirus…” and we’re done, the antivirus is taken care of and can no longer interfere with our further activities. Ideally, you want to make sure that you’re hidden before trying out any hacks."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rateintxt2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+             android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rateintxt" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

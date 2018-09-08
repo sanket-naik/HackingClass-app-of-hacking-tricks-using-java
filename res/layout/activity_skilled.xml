@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorialback"
+    android:paddingBottom="0dp"
+       android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Skilled" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1044dp" >
+
+          <ImageView
+              android:id="@+id/imageView1"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_below="@+id/textView1"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="35dp"
+              android:src="@drawable/dos_introdctn" />
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView1"
+              android:layout_below="@+id/imageView1"
+              android:layout_marginTop="24dp"
+              android:src="@drawable/dos_atck" />
+
+          <ImageView
+              android:id="@+id/imageView3"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView2"
+              android:layout_below="@+id/imageView2"
+              android:layout_marginTop="27dp"
+              android:src="@drawable/ddos_atck" />
+
+          <ImageView
+              android:id="@+id/imageView4"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView3"
+              android:layout_below="@+id/imageView3"
+              android:layout_marginTop="23dp"
+              android:src="@drawable/keylogrs" />
+
+          <ImageView
+              android:id="@+id/imageView5"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView4"
+              android:layout_below="@+id/imageView4"
+              android:layout_marginTop="24dp"
+              android:src="@drawable/hacking_fb" />
+
+          <ImageView
+              android:id="@+id/imageView6"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView5"
+              android:layout_below="@+id/imageView5"
+              android:layout_marginTop="26dp"
+              android:src="@drawable/learn_program" />
+
+          <ImageView
+              android:id="@+id/imageView7"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView6"
+              android:layout_below="@+id/imageView6"
+              android:layout_marginTop="25dp"
+              android:src="@drawable/rat" />
+
+          <ImageView
+              android:id="@+id/imageView8"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView7"
+              android:layout_below="@+id/imageView7"
+              android:layout_marginTop="23dp"
+              android:src="@drawable/hacking_wep" />
+
+          <com.google.android.gms.ads.AdView
+              android:id="@+id/adView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              ads:adSize="BANNER"
+              ads:adUnitId="@string/banner_ad_unit_id" >
+          </com.google.android.gms.ads.AdView>
+
+          <ImageView
+              android:id="@+id/imageView9"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView8"
+              android:layout_below="@+id/imageView8"
+              android:layout_marginTop="22dp"
+              android:src="@drawable/hacking_wpa" />
+
+          <ImageView
+              android:id="@+id/imageView10"
+              android:layout_width="400dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/imageView9"
+              android:layout_below="@+id/imageView9"
+              android:layout_marginTop="24dp"
+              android:src="@drawable/wifi_hacks" />
+
+          <RelativeLayout
+              android:id="@+id/relativeLayout1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/imageView10"
+              android:layout_marginTop="22dp" >
+
+              <ImageView
+                  android:id="@+id/imageView27"
+                  android:layout_width="60dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:src="@drawable/previous" />
+
+              <ImageView
+                  android:id="@+id/imageView29"
+                  android:layout_width="140dp"
+                  android:layout_height="50dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:src="@drawable/rateintxt" />
+
+              <ImageView
+                  android:id="@+id/imageView31"
+                  android:layout_width="60dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:src="@drawable/next" />
+          </RelativeLayout>
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:text="&quot;Its Dificult Before It Become Easy&quot;"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#142857"
+              android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

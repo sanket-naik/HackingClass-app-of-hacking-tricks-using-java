@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3240dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="R.A.T"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Here is an introduction to Remote administration tools. These are generally called RATs, and yes they have a vicious bite. although this page doesn’t teach you how to blast open a RAT straight away, here you will learn everything you will need to start a ‘plague’. RATs form an entire class of hacking including trojan infections, backdoors etc. But to go further, we need to clear up the basics first so, here we go.\n\nWhat’s a RAT?\nRAT = Remote Administration Tool. It is mostly used for malicious purposes, such as controlling remote PC’s, stealing victims data, deleting or editing some files. One can infect someone else by sending them a file called “Server”. If and when this server file is opened, it burrows itself deep in the system and starts to run in the background. Further, it may also send the attacker a message every time it is active like when a computer is turned on.\n\nHow are they spread?\nSome RATs can spread over P2P (peer to peer) file sharing services (Torrents, mostly..), messenger and email spams(MSN, Skype, AIM etc.) while other may tag along hiding behind some other software. The user installs something, clicks “Next” 5 times and voila! Without anyone ever finding out the RAT has compromised a system.\n\nHow is the server controlled?\nOnce installed, the RAT server can be controlled via what’s called a RAT client. Basically it’s just an application that tracks your RAT’s movements. It tells you how many systems are infected, information on their system, versions of OS and other softwares, their IP address etc. It shows a whole list of IP addresses which may be connected to immediately. After connecting, you can make the computer do pretty much anything (except maybe, do hula dance XD) – Send a keylogger, uninstall their antivirus, crash the system etc.\n\nWhat is port forwarding?\nIf you’re a gamer or are used to downloading torrents, you must’ve heard “Port Forwarding” as a way to increase download speeds, reduce lag etc. Port forwarding is the redirecting of computer signals to follow specific electronic paths into your computer.If the computer signal can find its way into your computer a few milliseconds quicker, it will add up to be a possibly dramatic speed increase for your game or your downloading. Don’t start jumping around just yet, your internet connection is probably already optimized for maximum performance (It is so, by default).\n\nLet’s take an example: That pencil-thin network cable (that goes into the network adapter) at the back of your computer contains 65,536 microscopic pathways inside it. Your network cable is just like a major highway, except your network cable has freaking 65,536 lanes, and there is a tollboth on each lane. We call each lane a ‘port’.(FYI, 2^16 = 65,536. So, that tells us 2 bytes = 16 bits in all is sort of the “width” of network cables, which gives us 65,536 different possible combinations – hence the same number of ports.)\n\nYour internet signal is comprised of millions of tiny little cars that travel on these 65,536 lanes. We call these little cars “transfer packets”. Computer transfer packets can travel very quickly (just under the speed of light actually), but they do observe a stop-and-go set of rules, where they are required to stop at each major network intersection as if it were a border crossing between countries, or connecting to a different ISP. At each intersection, the packet must do three things:\n•Find an open port,\n•Pass the identification test that will allow it through that port, and if not,\n•Move to the next port and try again, until it is allowed to pass through the toll.\n\nIn some cases, packets sent by hackers will be caught and held at the intersection, where they will then be dissolved into random electrons. When this happens, it is called “packet filtering” or “packet sniping”. Likewise, if a hacker gains control of a much used port, he can control every bit of information that passes through it – Read it, modify or even delete.\n\nAll in all, Port forwarding is when you command your network router to proactively identify and redirect every packet to travel on specific electronic lanes. Instead of having every packet stop at each port in turn until it finds an open port, a router can be programmed to expedite the process by identifying and redirecting packets without having them stop at each port. Your router then acts like a type of hyper-fast traffic policeman who directs traffic in front of the tollbooths.\n\nCan an antivirus catch a RAT?\nYes. Actually, Hell Yes! As a hacker, you will find antiviruses blocking your path at every damn step. (But we are white hats, right? No matter how annoying, it’s there to protect us, so be happy). But, like every problem, this too has a solution – Encryption. It’s called making your server “FUD” – Fully Undetectable. For example, typical encrypted formats, say password protected .zip or .rar files (if they contain malicious softwares) can be caught by an AntiVirus. Making a program FUD does pretty much the same thing, except it does so like a drunkard with OCD (Obsessive-compulsive disorder). What I mean is, running the software through an encryption program again and again so that nothing can recognize what it is and it can pass off as random harmless noise. Something called “Hex Editing” is a well known way to go about doing this. This is a whole different topic in itself. So, more on this later.\n\nLegal or illegal?\nWell, some RATs are legal, and some are not. Legal are the ones without a backdoor, and they have abillity to close connection anytime.(Backdoor is something that gives the attacker access to the victim’s system without their knowledge). Plus these are not really referred to as RAT’s, that’s just our (hacker’s) dirty language :-) Illegal ones are used for hacking and they may possibly steal data (or worse).\n\nA few examples are written below:\nLegal:\n•TeamViewer – Access any remote computer via Internet just like sitting in front of it – even through firewalls.\n•UltraVNC – Remote support software for on demand remote computer support.\n•Ammyy Admin – Like TeamViewer, Ammyy Admin is another reliable and friendly tool for remote computer access.\n•Mikogo – Mikogo is an Online Meeting, Web Conferencing, Remote Support tool where you can share your screen with several participants in real-time over the Web.\n\nThe above tools while very useful and very legal, require a green light from both the parties involved. That’s the main difference between the ones above and the ones below:\nIllegal (or barely legal):\n•Spy-Net\n•Cerberus Rat\n•CyberGate Rat\n•SubSeven\n•Turkojan\n•ProRat\n\nThese are all used for one purposes – Causing trouble, to say the least. RATs like the ones above are meant to be stealthily. After all, no hacker will want their victims to get a message like: “Congratulations! You have been infected!”(Or maybe let the AntiVirus find it). Use any of these on an actual victim, and you will get a ticket to jail, or at least a fine. But these are actually used, and mostly without anyone ever suspecting anything wrong. The thing is, hacking is becoming much more of a serious business than a game. A RAT that simply crashes the OS or formats the hard disk gives nothing to the attacker, So why bother doing it in the first place ? RATs today are evolving (pun unintended). They are becoming more like “parasites” instead of predators.\n\nThey may be used for DDOSing (by creating massive botnets with tens of thousands of slave computers), clicking ads in the background(the usual click fraud), increasing blog and youtube “views”, even using the compromised systems to “earn money online”, by pushing surveys, exploiting the websites which offer a pay-per-install model, even “mining” bitcoins (Bitcoins are just a fancy new online currency. Bitcoins can be earned by devoting CPU power, then converted into real money, hence their potential exploitation by using RATs). (Don’t bother googling this. Like every “Online money making” offer, whether it works or not, this too is a waste of your time. No offence to the BitCoin Foundation :-D)\n\nWhats DNS host?\nThe Domain Name System (DNS) is a hierarchical naming system for computers, services, or any resource connected to the Internet or a private network. It associates various information with domain names assigned to each of the participants. Most importantly, it translates domain names meaningful to humans into the numerical (binary) identifiers associated with networking equipment for the purpose of locating and addressing these devices worldwide.\n\nWhat all can a RAT do?\n\nHere is list of basic features:\n• Manage files. (Delete/Modify)\n• Control web browser(Change homepage, open a website etc.)\n• Get system informations(OS Version, AV name, RAM Memory, Computer name, Network Addresses etc.)\n• Get passwords, CC numbers or private data etc. (via Keylogger)\n• View and control remote desktop (Take screenshot or a snap from the webcam)\n• Record camera, sound (Control mic and camera)\n• Control mouse, keyboard input.\n• Pretty much everything you can do on your own computer, except play GTA V remotely. (Although technically, you can do that too)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+          <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

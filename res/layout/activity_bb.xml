@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1750dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="DOS Attack"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbb" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Most servers are built to handle a fairly large bandwidth and even the smaller ones can give maximum speeds to several hundreds of clients. Keeping this in mind, it is very difficult and for the most part impossible to actually bring down a website using DOS from a single computer. Where your internet speed might be 1Mbps, your target server might have several 100Mbps. This is the reason that most DOS attacks are actually DDOS,that is Distributed-Denial of Service.\n\nDDOS attacks can easily bring down majority of websites. In DDOS, Botnets are used which are just a bunch of compromised systems who have been infected with a virus or trojan. A simple trojan can be sent out as a public download, and if the unsuspecting victims download it the trojan may silently settle down somewhere deep in the system and start up in the background without the user or the system ever knowing. When enough systems have been compromised in this way the master of the Botnet, the hacker who wants to DDOS a website may send out a message to the dormant trojans on several systems around the world, which may then indivisually begin attacking a server. This can be very harmful to the website, which due to lack of resources, may shut down for a long time and even get corrupted due to overloading. Further, since the requests for transactions are coming from seemingly random IP addresses all at once(the botnet), the victim may never find out the identity of the mastermind.\n\nAlthough I won’t get into the technical details, here is an example of a fairly popular DOS tool – HULK. Hulk is just a simple python script that continuously sends out large packets from randomly generated IDs so as to fool the server. Again, using it from just one computer may not actually do anything to any big websites, but it may be able to bring down a small website, for example your school’s website in about a minute.\n\nTo perform this attack you need two things:\n\n1. The python Engine (v2.x) – To run and compile the hulk script. You can get it here :\nhttp://www.python.org/getit/\nNOTE : Download the 2nd version only (for example the current one is 2.7.6), this script does not work with the 3.x version of python.\n\n2. Hulk.py script – This will run like a normal cmd.exe window. It’s a small zip file,Get it here :http://packetstormsecurity.com/files/download/112856/hulk.zip\n\nFor technical details, The official website is :\nhttp://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/\n\nWhen all is done, you should have python installed, and hulk.py file extracted. It would be easier if you installed Python to a root directory, for example :\nC:\\PYTHON27.\nAlso, put the hulk.py file which you just extracted in the same root directory alongside the PYTHON27 folder(In my case, I put the hulk.py file in the C:\ directory).Again, both python folder and the hulk.py file are now in the C:\ ). With all that done, let’s launch our DOS attack !\n\n1. Open Run, type cmd to start cmd.exe window.\n\n2. Change directory to where you installed PYTHON and put hulk.py , Type ‘cd’ then the directory (Case sensitive) (cd= change directory)\ncd C:\\PYTHON27\n\n3. Now start up the hulk.py script as follows :\nC:\\hulk.py http://www.google.com\n\n(Write the directory of the hulk.py file followed by a space followed by the website you want to attack (Don’t actually try this with google, since they tend to block IPs with weird requests like the ones we are sending. You may be blocked from google for some time. If you want to try it out, consider setting up a small website on your own, or ask someone’s permission.)\n\nYou should now see something like:\nHULK ATTACK STARTED\n\nGive it a few seconds then it will show how many requests it has sent. A few more seconds and if the attack was succesfull you will see something like: ‘Response Code 500’\n\nAs soon as you spot this, try opening the website which may say : ‘Resource Limit Reached’ or ‘Service Unavailable’ meaning you have successfully brought down the website.\n\nTechnically, most servers may temporarily deny all requests from your ISP (internet service provider) and hence your IP address meaning that you’ve not actually brought down the website for the world but only for yourself(The website banned you). This is why DOS isn’t as effective as DDOS. When the server has to repeatedly deny several IP addresses, it truly runs out of resources for anyone wanting to open the website."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="17dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

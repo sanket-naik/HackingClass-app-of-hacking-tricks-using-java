@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanki.hackingclass"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
+        <activity
+            android:name=".Flash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+      
+        <activity
+            android:name=".TutorialActivity"
+            android:label="@string/title_activity_tutorial">
+        </activity>
+        <activity
+            android:name=".Hacking"
+            android:label="@string/title_activity_hacking">
+          
+        </activity>
+        <activity
+            android:name=".Rules"
+            android:label="@string/title_activity_rules">
+            
+        </activity>
+        <activity
+            android:name=".Types"
+            android:label="@string/title_activity_types">
+           
+        </activity>
+       
+        <activity
+            android:name=".BignerActivity"
+            android:label="@string/title_activity_bigner">
+        </activity>
+       
+        <activity
+            android:name=".Skilled"
+            android:label="@string/title_activity_skilled">
+        </activity>
+        <activity
+            android:name=".Expert"
+            android:label="@string/title_activity_expert">
+        </activity>
+        <activity
+            android:name=".Aa"
+            android:label="@string/title_activity_aa">
+            
+        </activity>
+        <activity
+            android:name=".Ab"
+            android:label="@string/title_activity_ab">
+          
+        </activity>
+        
+        <activity
+            android:name=".Acc"
+            android:label="@string/title_activity_acc" >
+        </activity>
+        <activity
+            android:name=".Ad"
+            android:label="@string/title_activity_ad">
+        </activity>
+        <activity
+            android:name=".Ae"
+            android:label="@string/title_activity_ae">
+        </activity>
+        <activity
+            android:name=".Af"
+            android:label="@string/title_activity_af" >
+        </activity>
+        <activity
+            android:name=".Ag"
+            android:label="@string/title_activity_ag" >
+        </activity>
+        <activity
+            android:name=".Ah"
+            android:label="@string/title_activity_ah">
+        </activity>
+        <activity
+            android:name=".Ai"
+            android:label="@string/title_activity_ai">
+        </activity>
+        <activity
+            android:name=".Ba"
+            android:label="@string/title_activity_ba">
+        </activity>
+        <activity
+            android:name=".Bb"
+            android:label="@string/title_activity_bb" >
+        </activity>
+        <activity
+            android:name=".Bc"
+            android:label="@string/title_activity_bc">
+        </activity>
+        <activity
+            android:name=".Bd"
+            android:label="@string/title_activity_bd">
+        </activity>
+        <activity
+            android:name=".Be"
+            android:label="@string/title_activity_be">
+        </activity>
+        <activity
+            android:name=".Bf"
+            android:label="@string/title_activity_bf">
+        </activity>
+        <activity
+            android:name=".Bg"
+            android:label="@string/title_activity_bg">
+             
+        </activity>
+        <activity
+            android:name=".Bi"
+            android:label="@string/title_activity_bi">
+        </activity>
+        <activity
+            android:name=".Bh"
+            android:label="@string/title_activity_bh">
+        </activity>
+        <activity
+            android:name=".Bj"
+            android:label="@string/title_activity_bj">
+        </activity>
+        <activity
+            android:name=".Ca"
+            android:label="@string/title_activity_ca">
+        </activity>
+        <activity
+            android:name=".Cb"
+            android:label="@string/title_activity_cb">
+        </activity>
+        <activity
+            android:name=".Cc"
+            android:label="@string/title_activity_cc">
+        </activity>
+        <activity
+            android:name=".Cd"
+            android:label="@string/title_activity_cd">
+        </activity>
+        <activity
+            android:name=".Ce"
+            android:label="@string/title_activity_ce">
+        </activity>
+        <activity
+            android:name=".Cf"
+            android:label="@string/title_activity_cf">
+        </activity>
+        <activity
+            android:name=".Cg"
+            android:label="@string/title_activity_cg">
+        </activity>
+        <activity
+            android:name=".Ch"
+            android:label="@string/title_activity_ch">
+        </activity>
+        <activity
+            android:name=".Ci"
+            android:label="@string/title_activity_ci">
+        </activity>
+        <activity
+            android:name=".Cj"
+            android:label="@string/title_activity_cj">
+        </activity>
+        <activity
+            android:name=".Ck"
+            android:label="@string/title_activity_ck">
+        </activity>
+        <activity
+            android:name=".Cl"
+            android:label="@string/title_activity_cl">
+        </activity>
+        
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

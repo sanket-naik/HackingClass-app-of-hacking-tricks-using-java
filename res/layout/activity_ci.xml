@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2131dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Information Gathering"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/cci" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Nmap (“Network Mapper”) is a free and open source utility for network exploration and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters//firewalls are in use, and dozens of other functions. It was designed to rapidly scan large networks, but works just fine against single hosts. Nmap runs on all major computer operating systems, and both console and graphical versions are available. But while learning using console is always better so as to give the user an idea of every little thing that is happening, Hence I’ll be using only console here.\n\nNmap is built in feature of Metasploit, so you won’t have to download anything. Before starting I implore the user to view the inbuilt help secion in every backtrack tool, experiment with every single option since it is only by doing can one learn Pen Testing.(For example, simply typing “nmap” in console opens up the help section) Open Metasploit console or the BackTrack konsole and type: Nmap (IP Address) -(options that you want).\n\nFor example:\nnmap 192.168.2.104 -sV This would give us all the services that are running and their version. If they are outdated, they are more likely to be exploitable.\n\nTake note of service names. For example, if you see MSRPC running on port 135, then in metasploit console type:\n\nsearch MSRPC\n\nThis would return all exploits that could be used later on. However, what if we got this as a scan result?\n\nMicrosoft-DS 445/TCP Open# Smb directly over IP\n\nWe could also go to http://www.metasploit.com and type service name in the search box. It might return a matching exploit that we need, if not the service might be new or is not exploitable – Move on to the next. ExploitDB is also very useful. (http://www.exploit-db.com)\n\nYou will often find yourself in a situation where target is protected by firewall. To scan for open ports when he has it turned on, do:\n\nnmap (IP) -sV -Pn\n\nOver time you will memorize a lot of exploits. But always remember that there is always much more to learn, you just must be willing to give it all you got.(In fact, the Metasploit database is updated several times a day so even the experts have a tough time keeping up !). (You will learn to exploit in the next sections)\n\nNessus:\nNessus is world’s leading and most popular vulnerability scanner and for a good reason. It’s awesome. It finds all vulnerabilities and makes the job much easier because you can import nessus scan to metasploit and directly get to exploiting. This will automatically find any exploits straight away usable against any target. Okay, so let’s start! Setting up Nessus requires some formalities. First we need to make an account. Go to http://www.nessus.org/products/nessus and register(It’s in the download link).\n\nActivation code will be sent to your email address. You want to copy it. Now open Backtrack console and type:\n\n/opt/nessus/bin/nessus-fetch -register *Your code*\n\nNessus will start fetching latest plugins. This might take a while so be patient. Next, you want to create a new user. Do this by typing:\n\n/opt/nessus/sbin/nessus-adduser\n\nNow input your username and password. That’s it. Now we need to start Nessus itself. In console, type:\n\n/etc/init.d/nessusd start\n\nYou have successfully installed Nessus on BackTrack.\nOpen Nessus interface by going to this address in your browser.\n\nhttp://127.0.0.1:8834\n\nInput Username and Password and you’re in. Nessus has some pretty cool features. You can add your own Policies by clicking on Policies tab. There you can enable/disable Nessus scan options.\n\nLet’s continue. Click scans and then hit add. Input scan name, Policy and Input Address/es that you want to scan. For local network scan choose network policy. For scanning over Internet choose policy that will scan external IPs. After the scan is complete, click on it and then click download report. Save it as .nbe file that we will use later on. This can be later used for automated exploitation.\n\nThis is the absolute minimum any BackTrack user should know about Reconnaissance. Due to space restrictions, I don’t think it would be practical to list every single option for every single BackTrack tool here, in this website. Every situation needs a different set of actions, which one can only learn by him/herself. So, look around and check out every single option offered by the various tools in BackTrack and you just might find something that can make your goal for hacking something extremely easier."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

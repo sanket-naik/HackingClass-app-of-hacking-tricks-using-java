@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2691dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="More On Wifi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbj" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="This article is fairly basic but it should give you some good background information of where and how to start and how WiFi hacking works.\nBefore all that, let’s take a look at some background information about the stuff involved in hacking WiFi.\n\nIP Addresses:\nPeople starting off in networking often get confused with this and is one of the most important and vital parts of information you will use and need. Each computer system has 2 types of the so called IP Addresses. Internal and External.\nExternal IP Address is what your ISP assigns to your modem. The external IP Address is NOT required in Wireless Hacking.\n\nInternal IP Address is what will be used in wireless network hacking and is the IP Address which the actual hardware router assigns to each computer. Unless specified in the router/computer settings, IP Addresses are dynamic and so will change nearly every time the computer disconnects and reconnects to the router the IP will be different.\n\nBasic software for someone interested in Networking is an IP Scanner. Most Networking software e.g. Cain, which I will go into further, includes an IP Scanner. There are lots of Scanners out there and a quick search on google will bring up a few good ones too.\n\nWireless Network Hacking:\nThe are several different types of encryption out there but since this is a basic guide I will focus on just one and mention the other.\n\nThe one I will be focusing on here is WEP (Wired Equivalent Privacy) encryption. Hopefully, you’re not protecting your network with this, if you are, I guarantee you will soon be in a hurry to change it. See for yourself, Read on ! WEP has been demonstrated to have numerous flaws and therefore the industry is basically forcing people to change to WPA/WPA2 encryption (by limiting speed between computer and router to 54mbps on wireless routers).\n\nThe exact details of how the WEP encryption works are a bit too technical to be discussed here, All you need to know is that WEP is extremely vulnerable. (If possible, change it to WPA/WPA2 ASAP!)\n\nMAC Filtering:\nBefore WPA/WPA2 came to the market and was added as a standard encryption method to routers, many people resorted to Mac Filtering as an extra layer of security.\n\nA MAC address is just an identification string made up of numbers and characters which every device that connects to a router has. So that is all Network Adapters. MAC filtering works by only allowing computers with a certain MAC address to connect to the router. However this can be easily overcome by spoofing your MAC address with simple software which I will go into later.\n\nThe fastest and most effective way to hack a wireless WEP Network is with a piece of incredible software called Aircrack-ng (http://www.aircrack-ng.org/).\n(For more info on Cracking WEP, press the back button and check out the tutorial on “Cracking WEP”.)\nOnce you’re in the network. The real fun begins.\n\nIntercepting Network Information:\nWhen information is sent anywhere on a network, the information is converted to fixed sized “packets”. These are the packets and these are what you will be intercepting.\n\n We will look at the main type of attack which is also the easiest.It uses a piece of software called Cain and Abel (http://www.oxid.it).\n\nOnce installed Run the application. It may come up on some Anti-Viruses and May also come up with a message claiming your firewall is restricting its access. In most cases both these are errors.\n\nYou have 2 toolbars at the top. The top one with File/View/Configure/Tools/Help and the second one. The 2 main buttons you will need are located on the second toolbar and are the second and third from the left. One that looks like a motherboard (Starts/Stops Sniffer) and the other one that looks like a Nuclear icon (Starts/Stops APR).\n\nGo ahead and click the Sniffer button located on the second toolbar second from the right. Then go ahead and click the Sniffer tab and make sure hosts is selected at the bottom tab. Then right click anywhere in the white area and click “Scan MAC addresses”. Click OK. Once this is done, if there are other computers on your network they should appear in the listbox. Highlight them all and then right click, selecting “Resolve Host-Name”. This is basically an IP scanner as I mentioned before. Giving the Internal IP Address and the Host-Name on the right to help you identify your slave.\n\nNow you need to find out your gateway address which is the IP Address of your router. Go into CMD and type IPCONFIG and look for the gateway address. An example would be 192.161.1.1\n\nOnce thats done. Click on APR on the bottom tab. The page should now be divided into 3, with aload of APR tools on the left and then 2 separate listboxs on the right. Click on the top listbox and you will notice that on the second toolbar, that there is a blue plus icon 7 from the right. Click that.\n\nNow a pop up with 2 listboxes will appear. On the left select your gateway Address and then on the right select your victims IP Address. Then select OK. You will now notice that they appear in the top listbox. Click on them and make sure its highlighted. Now click the Nuclear icon on the second toolbar 3 from the left. It should now start poisoning the other computer meaning all the traffic to and from that computer is going through your computer. This is called ARP spoofing. It is a computer hacking technique whereby an attacker sends fake (“spoofed”) Address Resolution Protocol (ARP) messages onto a Local Area Network. ARP spoofing allows us to intercept data frames on a LAN.\n\nIf the person is active on the computer using the network you will see the second listbox start filling up with routing packets. If you click the password tab at the bottom. Any unencrypted websites they enter their password in, will show up in that box. HTTPS/SSL websites which are encrypted will show up as usually a random string or nothing at all. Often when someone is spoofing a slave. If they visit a HTTPS website, it may come up with a warning message with commercial browsers as the SSL encryption cannot verify with the server since the software tries to replace it with a fake one. This can lead to suspicion of intrusion with the slave.\n\nAnalysing the Packets:\nNow that we have all this data streaming through our computer we need another piece of software to analyze it. This is where Wireshark comes in (http://www.wireshark.org/).\n\nWireshark is fairly basic to use. Install it and run it. Then click on the first icon on the second toolbar. Check the box with the most packets running through it and click start.\n\nYou should now have a stream of packets flowing through. There are countless things you can now analyse and view from your slave. You have all the data which is going to and from there computer. Viewing it and analysing it can be simple but also tricky depending what your trying to find out.\nTheres plenty more information on how to use Wireshark on the Wireshark wiki (http://wiki.wireshark.org/).\n\nFrom here you can develop your skills and further your knowledge on networking. This sheds a light on how vulnerable our virtual privacy really is. It’s really not surprising so many people regularly use softwares like VPN’s and proxies."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+             android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rateintxt2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignTop="@+id/imageView4"
+            android:src="@drawable/rateintxt" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

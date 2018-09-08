@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1670dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Hacking WIFI"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbh" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Tools Required:\n\n1. CommView for WiFi: http://tamos.com/download/main/ca.php\n\n2. Aircarck-NG GUI: http://aircrack-ng.org/\n\n1. Install CommView. While installation you maybe asked whether you want to install the application in VoIP mode or Standard mode. Both mode will work fine for our case. But I usually used the VoIP mode. It will automatically seraches and installs the available drivers needed for making the wirless adapter to enable the packet capture (by turning on promiscuous mode). Just allow it to install the needed drivers an you are good to go to the next step. And please note that while using CommView, your WiFi networks will get disconnected. Don’t panic, you are doing right! ??\n\n2. After the installation, start the application and click on the left arrow on the left side.\n\n3. You will be prompted with a new window. Click on the Start Scanning button.\n\n4. In the right column, all the available networks around you will be shown. Just click the network you want to get the password, and click on “Capture”. Please note that, this tutorial is for WEP networks only!\n\n5. Now the newely opened windows will be closed and you can now see that the CommView started capturing the packets.\n\n6. Click on Settings> Options> Memory Usage. Change the value of maximum packets in buffer to 20000.\n\n7. Now you can click on the logging tab. Select “Auto Logging”. Enter 2000 in the “Maximum Directory Size” and 20 in the “Average Log File Size”. We just told the CommView to capture *.ncp packets with each file of 20MB size and store it in the directory we chosed.\n\n8. Again go to “Logging” tab and select “Concatenate Logs” to join all the split logs of 20 MB we just created. And now we have one *.ncf file.\n\n9. Go to File>Log Viewer> Load CommView Logs> and choose the *.ncf file that we just got form the above Concatenation step.\n\n10. Click File> Export> Wireshark/Tco dump format. This will create a .cap file\n\n11. Go to the Aircrack application folder and then traverse to the bin file inside. Double click on Aircrack-ng GUI.exe in the application, choose the *.cap file we just created in the step 10.\n\n12. And that’s it! If you sufficient data to crack the password, you will get the password. It is advisable to proceed from step 8 to 11 only after receiving enough packets. You will need a minimum of 100000 packets to start the cracking. So after step 7, it is advisable to leave the system alone for 2-3 hours and then proceed to the further steps!\n\nNOTE:\nRecently CommView became a paid software with a rather ridiculous price tag. But, no worries. There are more than enough alternatives. Some of them are mentioned below and can be used to obtain the .cap file as explained above:\n\n•Cain $ Abel:\nhttp://www.oxid.it/cain.html\n\n•WireShark:\nhttp://www.wireshark.org/\n\nFor about a couple dozen more, check out the wikipedia page (link below )listing almost every packet analyzer:\nhttp://en.wikipedia.org/wiki/Comparison_of_packet_analyzers\n\nThey all work the same way, basically all we need is a means to get the .cap file and after that the role of packet analyzers is over. For most purposes WireShark is more than enough, so kindly check out this one first. On a seemingly unrelated note, the war against piracy wages on and packet analyzers have become victims too. Proprietary softwares like CommView continue to be easily available on torrent websites which shows just how harmful hacking can be to a company."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

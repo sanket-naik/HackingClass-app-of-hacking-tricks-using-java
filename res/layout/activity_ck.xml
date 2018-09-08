@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2699dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Heartbleed Bug"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/cck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="On April 7, 2014, OpenSSL received a fix to a very popular and controversial vulnerability- The Heartbleed bug. On that day, over half a million web servers were found to be vulnerable. Fortunately that number is steadily decreasing and just like every other exploit, the Heartbleed bug is now out in the wild and the epidemic may never be fully eliminated (A hacker can dream, right?)\n\nThis vulnerability allows a hacker to extract information from a server’s memory which may contain authentication credentials, cookies, the server’s private key (even the admin password), and personally identifiable info (PII) that could be used for identity theft. The biggest websites on the internet were vulnerable. Facebook, Google, Twitter, Instagram, Yahoo, Pinterest, Tumblr, Dropbox and a few million more. All these websites were quick to announce, within a few weeks, that they’ve successfully patched the bug. What they didn’t announce, is that this vulnerability existed even 2 years ago and only now came to light. This is also part of the reason why users were recommended to change all passwords everywhere. The NSA has (allegedly) been using this vulnerability for years to exploit websites.\n\nOpenSSL is an encryption library used in HTTPS (secure HTTP). If you ever notice URL bar after typing the address, say “google.com” you’ll see that it automatically changes to “https://www.google.com”. That is the job of OpenSSL. OpenSSL basically encrypts all communication between the server and the client while it takes place through the HTTPS URL. This makes all the password sniffing cookie stealing hacks impossible (sad face).\n\nDuring communication, OpenSSL uses a handshake, or more popularly, a “heartbeat” that echoes back a signal to verify that the data was received correctly. It’s a bit like double checking whether the message was successfully received or not (Like the two tick marks you can see on WhatsApp messages).\n\n The appropriately named Heartbleed bug vulnerability enables a hacker to trick OpenSSL by sending a message that is misinterpreted by the server running OpenSSL, which then actually sends back the actual data without any questions asked. The exact details are a bit technical, but thanks to Metasploit we don’t need to worry about them. Roughly translated, a single byte of data is sent to the server telling it that we actually sent 64K bytes of data. The server will then send back 64K bytes of data to be checked and echoed back. After this ‘heartbeat’, the server again sends 64K of random data from its memory. That 1 byte contains the buggy requests which confuses the server making it give up random information. So, with every ‘heartbeat’ we get 64Kb of private information (That’s enough for ~64,000 characters in plain unencrypted text. A lot of it will be rubbish but still enough for A LOT of accounts and passwords)\n\nNow for the exploit. Here you’ll learn to exploit the Heartbleed bug for getting a buggy website’s OpenSSL to spill the contents of its memory and possibly give us the user’s credentials and other information.\n\nStep 1: This might be a good time to update metasploit to get the new auxiliary module for Heartbleed (Unless you downloaded metasploit after the exploit was released). Type:\n\nkali > msfupdate\n\nMetasploit will then go through the long and slow process of checking and updating its modules and framework. On being returned to the command prompt, the update has completed and we’re ready to begin.\n\nStep 2: Start Metasploit\n\nkali > msfconsole\n\nStep 3: Find Heartbleed using the built in search feature. Type:\n\nsearch heartbleed\n\nThis should bring up two auxiliary modules for Heartbleed. We want the one under ‘scanner’ folder and not ‘server’.\n\nStep 4: Load up the auxiliary module\n\nuse auxiliary/scanner/ssl/openssl_heartbleed\n\nThis will load the heartbleed module.\n\nWhenever using a new module, you may wish to find more about it and the options we can set for it.\n\nmsf > info\n\nThis command reveals the options that we can set in order to use this module and a description of the module.\n\nStep 5: Set RHOSTS. RHOSTS refers to the website that is vulnerable to the Heartbleed bug. We can set it to the IP address of the website as shown below (To find the IP address of a website, simply ping it through the command line (e.g : ping www.google.com) :\n\nmsf > set RHOSTS 192.168.1.169\nmsf > set verbose true\n\nFinally, set the option ‘verbose” to “true”. This will provide us with verbose output (i.e., everything that metasploit receives from the server will be shown to us).\n\nStep 6: Let her rip.\n\nmsf > run\n\nIf everything went as planned the server will leak about 64K bytes of what was in its memory. This could contain anything from username-password pairs to credit card numbers which is why this hack (along with pretty much all others) is very much illegal to actually try on a live website without the developer’s explicit consent.\n\nHere is an interesting page listing the names of thousands of vulnerable websites:\nhttps://zmap.io/heartbleed/"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

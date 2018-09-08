@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Aa" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2076dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Memory Overload"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/d" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Batch file is the name given to a type of script file, a text file containing a series of commands to be executed by the command interpreter.\nA batch file may contain any command the interpreter accepts interactively at the command prompt. A batch file may also have constructs (IF, GOTO, Labels, CALL, etc.) that enable conditional branching and looping within the batch file.\n\nBatch files usually have extensions : *.bat\nThey can be easily created in any word editor like notepad, wordpad.\n\nIn this tutorial you will learn how to create one of the simplest yet deadliest virus programs in the form of a batch file. This 6-line piece of code is so devastating, it can bring down a computer in a matter of seconds. (Well, at least it could a couple decades back)\n\nExplanation: This batch file creates another batch file in the same directory, then copies itself into each of these newly created files. These files are then started up. Of course, they are identical so both of them start up again and repeat the process until the computer runs out of memory and crashes (or the antivirus catches it).\n\nWhat this will do, if you leave it on long enough (about a couple minutes), is it will create so many copies of itself on the hard drive that all the empty space has been filled with these bats. Also it will use up all the computer’s RAM as it is being told to run an ever-increasing number of the same processes, which over time gets too much for it to handle.\nDepending on what runs out first hard disk space or RAM, the batch file may or may not cause permanent damage. In both cases, however, the computer will almost definitely crash, the operating system may be corrupted and on the next start up, you will be greeted by the well-known “Blue Screen Of Death”. The only way to get rid of it will be to format your hard drive and re-install the operating system.\n\nFurther, we can have this beautiful file executed at startup, as a surprise for the unfortunate user who will happen to start the computer the next time.\n\nNOTE: I cannot stress this enough- This is not a game. This tutorial is very dangerous (if you do it incorrectly) and for your own sake should never be actually performed. On execution, the computer will stop responding immediately and if the plug is not pulled off within 4-5 seconds (the program cannot be stopped after starting), there is a possibility of complete data loss and corruption of the hard drive.\nWith that out of the way, Here’s how to do it :\nStep 1 : Open a word editor like Notepad.\n\nStep 2 : Type in the following code ->\n\n@echo off\n:A\nSET /A x=%RANDOM%%%1999999999%\ntype damage.bat >> %x%.bat\nstart %x%.bat\ngoto:A\n\nStep 3 :Save the File as “damage.bat” (or whatever) and we’re done!\n\n(Optional) Step 4 :To make this file execute automatically at startup, Do the following. Create a shortcut of the damage.bat file by right clicking on it. Open the start menu, In programs Open Startup folder and simply drag or cut-paste the shortcut into this folder. The virus will break loose the next time the computer is started up."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+          <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

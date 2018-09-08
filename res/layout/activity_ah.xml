@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+ xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Aa" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3025dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Folder Blaster"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/h" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Most of the commands we use to make batch files are actually the same commands first implemented in MS-DOS (An ancient microsoft OS). These DOS(Disk Operating System) commands can also be used in the command prompt window. Whatever your batch file does, you can do it through the command line interface (CLI).\nStart “Run”, or hit [Windows key + R]. Type “cmd”, and you’re presented with the CLI. You can type “help” to get a list of commonly used commands and their functions. I recommend you try out each and every single command you can find. Hacking is getting more and more user friendly everyday, CLIs are being replaced by GUIs (Graphical User Interfaces) – meaning in most places you won’t have to actually type in the commands, you can just select an option and press a button. But as of now, this is a work in progress. With more advanced hacking techniques, specially the ones that involve using BackTrack tools, you will find that majority of the hacks are still done through the CLI (More on this, later).\n\nYou will soon be learning how to hack into a remote computer and get the CMD window of the victim’s computer. Hence, I recommend getting used to the CLI, as soon as possible, as much as possible. Before getting to the code, let’s take a look at a couple of commands.\n\nmd – (or mkdir) – Make Directory. This command is used to create a directory (a folder). The command:\nmd abcd\n..will create a folder in the current directory named “abcd”.\n\ncd – Change Directory. This command is used to change the current directory. The following command:\ncd C:\\\n..will take the program (your batch file) to the Root folder and:\ncd C:\\Users\n..will take you to the folder called Users in the C drive. You can change where you “mkdir” by using “cd”. (You can now create folders in any directory you like)\n\nHere we’ve got the Folder Blaster virus. Again, this one’s fairly easy to understand. What we’re doing below is creating a bunch of folders, opening them all at once and keeping them open, effectively hogging a big portion of the screen and memory causing the windows to lag, freeze up and sometimes crash.\n\n@echo off\ncd ./Desktop\nmd 1\nmd 2\nmd 3\nmd 4\nmd 5\nmd 6\nmd 7\nmd 8\nmd 9\nmd 0\n:confirm\nstart 1\nstart 2\nstart 3\nstart 4\nstart 5\nstart 6\nstart 7\nstart 8\nstart 9\nstart 0\ngoto confirm\n\nSo, we begin by turning off echo. Then we change the directory to Desktop. Now we create ten folders with names 0-9. We setup a label and start opening up all the 10 folders. Now the final statement causes an infinite loop. Of course, if the folder is already opened it will not be opened again. But the use of this infinite loop is if the user attempts to close the folder, the loop is still going on and it will send a message to open that folder again. So the victim will be stuck as every time s/he closes a folder it opens up again, eventually making them give up and restart the system.The above code can be made much shorter with the use of LOOPs, as discussed below. We start by creating a variable and setting it’s value to 0. We use this variable as a check to let the computer know when to come out of the loop. Take a look at the code first:\n\n@echo off\nset /a i=0\n:loop\nif %i%==10 goto end\necho This is iteration %i%.\nset /a i=%i%+1\ngoto loop\n:end\n\n“set” is used to define and initialize a variable. Here we create a variable called “i” and set it’s value to zero. After setting up a label, we check if the value of the variable “i” (given by %i%) is equal to 10, and if it is we “goto” the label end (the program ends when this happens). Now we “echo” (send a message) to notify the user which iteration is currently running. In the next step we increment the value of “i” by one and then go back to the “if” statement.\n\nSo the loop runs ten times (0-9), and then stops. The above was not a virus, but a simple program. Earlier, I told you that the above Folder Blaster virus code can be made shorter by using loops. You know how to make the virus, and now you know how to use loops. Combining the two of them, I leave as an exercise for the wannabe hacker. (HINT: See the folder names up top going from 0-9 ? You can just replace them with %i% in the above loop.)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="24dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

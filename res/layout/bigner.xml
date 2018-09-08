@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorialback"
+    android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.BignerActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="890dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="&quot;Beggining is always the hardest&quot;"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#142857"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/zipbmb" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/usb_stealer" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/patchtool" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/overloadmemory" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/memorywipe" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/appflooder" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_below="@+id/imageView6"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/forkbomb" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView7"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/foldrblstr" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView8"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/psing" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView9"
+            android:layout_marginTop="26dp" >
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" >
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>
+

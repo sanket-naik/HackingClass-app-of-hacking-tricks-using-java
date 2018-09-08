@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2676dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Installing Kali"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/cca" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Around April 2014, www.backtrack-linux.org officially stopped supporting backtrack downloads. This was mainly due to the release of Kali 1.0.6 which fixed majority of the bugs in the OS. Although Backtrack is still available through torrents, it’s better to move on to newer and better things, namely, Kali.\n\nIn a nutshell, mathematics tells us the difference between windows 8 and windows 8.1 is 0.1, Similarly, Backtrack and Kali are not that different. Kali is the like the next revamped version of BackTrack. If you prefer to keep using Backtrack, you’re not exactly missing out on something huge (yet). But still, it’s always better to use up to date software, nobody knows that better than us hackers. Backtrack ruled the hacking universe for nearly 8 years (released in 2006) and now the torch is in the hands of Kali. So, here we’ll be taking a brief look at the two operating systems, their differences and advantages of Kali over Backtrack and finally how to install Kali.\n\nDifferences between Kali and BackTrack\nLike I said, Kali is not so different than Backtrack. At first look, you’ll probably notice the slight GUI change. The tools are in different places but it shouldn’t take long to get used to. One major difference beginners may not notice is that Kali is built on Debian Linux instead of Ubuntu Linux. The Debian vs Ubuntu debate is a whole other topic, so we’re not getting into that. Plus, you don’t need to fill your head with unnecessary information. Kali can be thought of as the next iteration of Backtrack. The developers are the same, the functionality is almost the same and the GUI change is definitely for the better.\nThe advantages of Using Kali Over BackTrack\n•’Some’ new tools.\n•The new GNOME interface.\n•Regular updates, updated tools like Metasploit, p0f etc.\n •A build specifically designed for the ARM architecture (read: ‘android smarphones compatible’).\n •All tool directories are in the PATH variable, so any tool can be called from anywhere.\n(Also now that backtrack has no future, we don’t have that much of a choice)\n\nThere’s no game changer advantage of Kali over Backtrack. But now that Backtrack is no longer going to update, vulnerabilities will start popping up in the OS which will be fixed in Kali but not Backtrack. The last thing a hacker needs is to get hacked him/herself. Let’s install Kali now. If you’ve installed Backtrack earlier, the installation process of Kali is practically identical.\n\nStep 1: Download and Burn Kali\nHead over to: http://www.kali.org/downloads/\n\nThere are quite a few options, the only ones you need to worry about are 64 bit or 32 bit and torrent or direct download. Check out the properties page of your ‘My Computer’. If your architecture (OS and processor) are 64 bit, download the 64 bit one. If you’re not sure, you may simply download the 32-bit version which works on all systems. (If you have 4GB or less RAM, 32 bit or 64 bit doesn’t make a difference). The download is around 3GB in size.\n\nBelow on that page you’ll see two more versions, ARMEL and ARMHF. They are relevant when installing Kali on ARM hardware devices (like Android smartphones and tablets). But, right now we’re trying to get Kali running on a PC.\n\nOnce we’ve got the ISO file, you can either burn it to a DVD to install as a permanent OS on your system or you can create a bootable USB Drive using software like UNetBootin. (See the tutorial on Backtrack for exact instructions)\n\nStep 2: Install Kali\n\nWe’ll be installing Kali on a Virtual machine. The two best virtualization systems are VMWare and Virtual Box. They are both equally good, but VMWare is paid. So, for a beginner hacker I recommend using Virtual Box. On startup, just like BackTrack, you can log in as “root” with a password of “toor”. Then, type “startx” to start the X-Windows system.\n\nUsing a virtual machine may not always be ideal. The main disadvantage is performance. Running an OS on top of another OS is bound to cause lagging. A system with 4GB RAM should handle it sufficiently well as long as no other programs are running. For optimal performance, 6GB (or more) RAM is recommend.\n\nFurther, for wireless hacking using a virtual machine, we need an external wireless card or adapter. They are usually small pen drives using which you can connect to a wifi network. Also, they must be compatible with aircrack-ng, the main wifi hacking software.\n\nAs mentioned before, you may also install it alongside your present OS so that both of them can mind their own business one at a time. To do that, you can use your burned DVD or USB drive and simply boot with the booting device jacked in. (You may need to alter the Booting Sequence through the BIOS menu).\n\nOnce the booting begins, you can click on the Install Kali button and follow the steps in the install wizard.\n\nThe disadvantages of using a VM are the advantages of using a dual boot system. Kali will run faster with less resources, you will not need an additional wireless card and you will not have the additional complexities of working in a VM. But installing another permanent OS may not be ideal for everyone. You may choose whichever method you like. If you have used another Linux distribution with the GNOME interface, you’ll notice that the pull-down menus at the top of the desktop look familiar, just like Backtrack. Also just like backtrack, we can find all the same tools (and some new ones) in the same upper left corner applications menu categorized in the same way. One interesting menu is the “Top Ten Security Tools” menu. You’ll find that it includes some of the most popular tools such as nmap, Metasploit, sqlmap, Wireshark, and aircrack-ng among others. Now you’re all set and you can start hacking with Kali Linux!\n\n*Since Kali officially supports ARM hardware, almost all android devices can run Kali. There’s an app called ‘Linux Deploy’ on the play store which does all the heavy lifting for us. All we need to do, is set a few options and hit install. The requirements for installing Kali on android phones are : Minimum android version 2.1 (rooted), 5GB free space in any one place (internal or external storage), decent internet speed and some patience.\n\nHere’s the URL for the Linux Deploy app:\nhttps://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy\n\nAnd here’s the official tutorial for getting Kali up and running on your smartphone:\nhttp://www.kali.org/how-to/kali-linux-android-linux-deploy\n\nLinux Deploy basically lets the user select which Linux distribution they want to install, the processor architecture, mirror URL, installation path etc. If you simply want to get it up and running quickly, Linux deploy provides defaults that almost always work. Although very improbable, even if something does go wrong, the installation of Kali on your android phone is completely reversible. On hitting the Install button, Linux Deploy will start downloading the image file and then go on to install it.\n\nFor exact instructions, head to the official tutorial URL given above.\nA few pointers: Make sure you select Kali Linux under the distribution tab. The download is approximately 2GB in size, so plan accordingly. There are two architecture types, ARMEL and ARMHF. ARMEL is for ARMv4 instruction set and ARMHF is for ARMv7 instruction set for the phone’s processor. The majority of phone today have ARMv7 (or above), but if you have a relatively old model, you may wish to google up your phone’s specifications to find out which one you can run. One last thing, around 4GB minimum is recommended for the image size but if you plan on installing a lot of tools you can manually change the image size in Linux Deploy."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

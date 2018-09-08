@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2664dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Installing Backtrack"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccb" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="How to Install BackTrack 5(contents)\n\n•Download the BackTrack 5 ISO\n•Setting up a Virtual Machine\n•Installing BackTrack 5\n•BackTrack Login\n•(Optional) Creating a Bootable USB Drive\n\n*Download the BackTrack 5 ISO\nHead over to: http://www.BackTrack-linux.org/downloads/ Then click the download button.\n\nAfter that, you need to pick the version of BackTrack that you want. Pick the latest one, it’s BackTrack 5 R3 at the time of writing this tutorial. The window managers(KDE and Gnome) are both pretty much equal, choose any. Pick the architecture according to your system’s specs(Right click on My computer to find out, 32 bit or 64 bit) . We want the ISO file type because we can use it on a DVD, a USB flash drive, and install on a virtual machine. Direct download or torrent download is up to you. The file is little over 3 GBs, so it may take some time depending on your internet speeds.\n(You’re now setting up a whole new operating system, which takes time, So I suggest you read this tutorial before beginning once completely, and then refer to it if you get stuck, it’s relatively easy)\n\n*Setting up a Virtual Machine\nA virtual machine (VM) is the software implementation of a physical computer. In other words, it’s having another computer on your current computer. If you have never used a virtual machine it is a good time to start. VMs are excellent when it comes to practicing your hacking techniques as they provide somewhat of a safe closed environment, such that any damage, if it occurs is contained within the dummy operating system, which can then be simply restarted to start afresh.\n\nTo start, you’re going to need to get VM software. There are many out there, here are a few popular ones.\nVMware Player (Windows/Linux) – Free\nVirtualBox (Windows/Mac/Linux) – Free\n\nWhichever VM software you go with, make sure it has a way to network with other VMs. If you don’t want to spend the money, go with VirtualBox. If you plan to get serious with penetration testing, you might want to consider getting a VMware Workstation license. It is full of useful tools and goodies such as sharing VMs and remote access and easy to work with. The easiest to install is ‘Windows Virtual PC’, it will do for beginner purposes. These programs are very similar in function. You shouldn’t have trouble following the basic setup instructions.(Google any Virtual machine software and install it)\n\nAfter everything is installed and running, click “Create new virtual machine”. (Depending on which one you install, the instructions might be a little different. If you look around there will definitely be similar options).\n\nNext you’re going to select “Installer disc image file” then browse for the BackTrack 5 ISO.\nSelect the operating system as linux, and the version as Ubuntu.\n\nGive the virtual machine a name such as “BackTrack 5 R3” and select a location for where you want to save the virtual machine files.\n\nWhen asked how much you want the virtual disk drive to be, you want at least 25 GB. This will be the most demanding requirement of BackTrack 5. Although the BackTrack-linux wiki says you need at least 20 GB, I found you will run out of space by the time you install updates or any other software (Feel free to put in even 5-15 Gb, if you simply want to look around. The OS is not the big, the tools are). Then, you will have the option of storing the virtual disk as a single file, or split into multiple files. Creating a virtual disk as a single file will allocate all of the space right away. Splitting into multiple files means the drive files will grow as you need them. So if your hard drive space is limited on your host system, go with multiple files. If you have a massive drive, and not worried about space, go with a single file.\n\nAnd that’s it! The virtual machine is ready to go. The recommended minimum RAM is 512 MB, however you can try lower if you need to.\nPower on the virtual machine and you will be ready to install BackTrack.\n\n*Installing BackTrack 5\nIf you are installing on a hard drive, you will need to burn the BackTrack 5 ISO on to a DVD or a USB Drive.\nFirst turn on your machine, then insert your DVD or USB Drive. Then press the key that allows you to select your boot drive. You may have to go into the bios to enable this. Most often, F12 will work. Select either your DVD drive, or your USB Drive to boot from it. (You may simply use the ISO file also. Windows virtua PC, for example gives an option to simply select an ISO file and start up directly)\nAfter a few moments, you will see BackTrack Live CD menu. Press enter on ‘BackTrack Text – Default Boot Text Mode’.\n\nWait about 10 seconds, and you will come to BackTrack shell console. Type the command “startx” to load the GUI.(If you directly used the ISO file without burning it to anything, your operating system will be now ready. If you prefer to burn the file to a DVD or pen drive follow the steps below)\nAfter another few moments, you will come to the desktop of BackTrack. Double click on the “Install BackTrack” to begin the install process.\n\nAfter you select your time zone, and language, you then have to partition your drive. If you are using a virtual machine, go ahead and use the whole drive. If you are dual booting, you will have to specify your partition for your two operating systems.\n\nContinue through the installer, and then click finish. BackTrack will then install on to your system. This process takes about 10-15 minutes.\n\n*BackTrack Login\nAfter it is finish, restart your system.\nAfter restarting, you will come to a login screen.\nThe default root name for BackTrack is “root” and the password is “toor”. After typing in the root username and password, you will come back to the BackTrack shell. Type “startx” to enter the GUI desktop, and we’re done ! I recommend you look around get a feel of all the tools and applications that come pre-installed on the amazing BackTrack OS.\n*(Optional)Creating a Bootable USB Drive\nRequired Items:\nA USB flash drive with minimum space of 4 GB.\nBackTrack 5 ISO\nUNetbooin – ( http://unetbootin.sourceforge.net/ )\n\nUNetbootin is a program that allows you to create bootable USB drives for linux distros and Windows. UNetbootin will download the distribution or use an ISO file you selected from your hard drive.\n\nOnce UNetbootin is downloaded you can run it by double clicking (Windows), plug in your USB Drive.\nStart UNetbooin and select the “diskimage” option, then select your BackTrack 5 ISO.\nSelect your USB Drive, then click “OK”.\n(WARNING: This will format your USB Drive and remove all previous data.)\nNow you should be able to boot off of your USB Drive with BackTrack 5."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="22dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

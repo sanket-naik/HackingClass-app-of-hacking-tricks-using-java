@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Hacking Class"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4b4b4b"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="This application strictly for educational purposes only, either to help people begin to learn white hat hacking or to check how hacks work. There is no such complete totorial on google play,so i made effort to make this app. Share with friends if you like it. plz do comment and rate this app in play store. Thank&apos;s guys! Happy hacking!!!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4b4b4b"
+        android:textSize="20sp"
+        android:width="330dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="Contect me @ : 776sanket@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/about_close" />
+
+</RelativeLayout>

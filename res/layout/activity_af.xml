@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Aa" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1958dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Application Flooder"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/f" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="The “Application flooder” although technically harmless, is a really annoying virus. Now that we’re moving further along in making batch file viruses, let’s stop for a second to discuss a couple of basic commands:\n\n@echo off – This command stops the batch file from showing the commands as they are being carried out, that is the command window will not show the commands as they are being performed. However, the output or error of the commands on execution will still be printed out in the command prompt window which is exactly like the cmd.exe window. We use this command when we don’t want to notify the user that something is going on, to hide unnecessary background details so that the user can’t actually see what’s causing trouble – which is what we’re doing here. Note that the command window will still show up, but there are methods to get around even this (to which we’ll get to later on).\n\n// – The ‘//’ (- two slashes) is used in A LOT of places to insert comments. A comment is just some text (or string), usually inserted to give the program’s reader some help in understanding the code. Whenever any compiler or say the command line interpreter bumps into // – It ignores everything that comes after it, in that line. It just skips it over, pretends there’s nothing there, and moves on to the next line. In many programming languages too, like C, C++, Java etc. you will find comments exactly like these everywhere.\n\nGetting to the interesting bit, below we have the code for the application flooder virus. As always you can type it in a notepad and save as a .bat file (any name). Try to understand what’s going on below and then head over to the explanation.\n\n@echo off\nx//label\nstart winword //MS word\nstart mspaint //paint\nstart notepad\nstart write //wordpad\nstart cmd //cmd prompt\nstart explorer\nstart control //panel\nstart calc //calculator\ngoto x //infinite loop\n\nExplanation: So, we start off by turning off “echo”. Now, the user won’t know which file is running and what’s causing havoc on their innocent computer. We set a label, say x. Now “start” is used to, well, start applications. We can start these application by using the names of their executable files (the ones that runs these applications). So, the user will see – Paint, Calculator, Control Panel, NotePad, WordPad etc. – All of them opening up for seemingly no reason. Check out the last line, “goto x”, remember that label we set up top named ‘x’? The goto statement send the program back to the beginning causing an infinite loop (that will probably run several times a second). So, the victim’s computer will be drowned in a sea of random applications coming out of nowhere, and opening up faster than he can close them. It will eat up all the RAM, making the computer lag and possibly restart or making the user push the power button. Nevertheless kids, don’t try this at home.\n\nEven though today our systems can handle a lot of stuff all at once, there’s still some minor risk in this batch file causing the windows to crash, maybe leave permanent damage too."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+          <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

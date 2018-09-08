@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Aa" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2711dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Pathch Tool"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/c" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="Here’s a seemingly atypical tutorial on “Cheat Engine”. It’s mainly about hacking games, but we’ll see there’s quite a bit more to it than just games. So, let’s dive in.\n \nFirst of all, what is Cheat Engine?\nCheat Engine is an open source tool designed to help you to modify (mostly) single player games so the user can make them harder or easier depending on their preference. (Example: If you find that 100HP is too easy on a particular game, you can try playing a game with a maximum 10 HP as a challenge). Cheat Engine(CE) also contains several other useful tools to help debugging and really just messing around with games and pretty much any applications.(Example: As a prank, one may alter the download speed shown in a torrent client/download manager to perhaps 100Gbps or something like that.)\n \nCE also comes with a memory scanner to quickly scan for variables used within a game and allow you to change them, but it also comes with a debugger, disassembler, assembler, speedhack, trainer maker, direct 3D manipulation tools, system inspection tools etc. – The ultimate tool for a mischievous programmer. So, read on to find out how CE does it.\n\n Although CE can do quite a bit more, let’s take a look at an example of “hacking” a game. Now, every single application there is uses what’s called “variables” to store various values. In a game, for example, the player’s HP, level, ammo, position – literally everything is stored in certain variables. There could be a separate variable with values 0-100 keeping track of hit points (HP), another variable keeping track of what level the user is currently in, and perhaps three more keeping track of the X,Y,Z coordinates of the avatar or player in a 3-D game. Almost all new games these days run in cycles. What I mean by that is the game has a recurring infinite loop of some function (group of statements) that goes on and on until the player exits/pauses the game. Inside the loop, the function’s code checks to see if (example) any user event has occurred. Did the user press the arrow keys? If so, then update their position accordingly. Did s/he click the left mouse button? If so, then decrease ammo by one and call the function to launch a projectile from the gun and so on. Certain aspects of games often rely completely on a particular variable and trust it to maintain a legit value. Considering that the average user may never even know about the existence of these background variables, it’s a reasonably safe bet. It’s just a game after all and implementing double checks, encrypted values and a sealed environment (sandbox) is simply not worth spoiling the performance and gameplay. This small point is what leaves almost every single player game vulnerable to nosy software such as Cheat Engine.\n\nThis is also the reason why CE does not (yet) work for most big online games likes RuneScape, WoW, AoC etc. since the data and any changes done to it are always double checked with the server’s copy. Whatever happens at the server, stays at the server and although you could make yourself LOOK like a pro, that will be only because of your dumb browser. (I.e., Like all applications, your browser also maintains variables which can be tampered with, but that doesn’t affect the server’s copy)\n\nWhat CE does is try to find out which variables the application is using, the addresses at which they are stored in the RAM and possibly tamper with them according to what the user(you) may want. For gamers, this tool is simply god sent. You can increase your speed in “Need for speed”, get infinite ammo in “Call of Duty” and avoid killing a thousand people or typing cheat codes for money in “Grand theft Auto” and so much more.\n\nRewinding back, how does any of this relate to hacking? It all lies in experience. CE teaches you how to find out exactly what the problem is and how to solve it. The procedure for tampering with games is very close to what we will try to accomplish in later, more advanced hacking techniques. CE gives you the feel and thrill of cracking a seemingly impossible problem and teaches you how to look for an open window when the door is locked – which is actually a very accurate definition of hacking. CE gives you a hint, a glimpse of advanced hacking procedures to which we shall get to later on. Fair warning, in my experience I’ve noticed that the number one reason for beginners giving up early while learning hacking is simply because it just gets a little boring. Outside of movies, that’s just the way it is. But for those willing to make the journey, the reward is more than worth it. I admit that to truly enjoy using CE, you have to be somewhat of a gamer. Hacking depends on, more than anything else, practice because practice only can give you the experience needed to truly hack like what you see in movies. (Yes, it’s possible. Everything is..) CE is nowhere close to a professional hacking tool, but it’s a step in the right direction (plus it’s fun). For the programmers, as I mentioned before CE is open source – It’s all out there waiting for you to explore.(Check out the official website given below)\n\nhttp://www.cheatengine.org"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="21dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+            <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="21dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView25"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+          <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

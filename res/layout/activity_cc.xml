@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ca" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3082dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Going Pro"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ccc" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="If you’ve read the previous tutorials, by now you should have a solid foundation of hacking. Clearly, hacking is very interesting. We’re practically the ninjas of 21st century. We can do the things other can’t, we’re willing to do the things that others aren’t but it would be of no use if we don’t apply it. Our actions, not our abilities, show who we truly are.\n\nSo here we are at yet another tutorial :-)\nWe’ll be taking a look at what exactly is required of a professional ethical hacker (or penetration tester) by analyzing a couple of job descriptions. Everyone doesn’t really need/want to go pro. Hacking, when used like it’s meant to be used, is great as a hobby. But it can’t hurt to know, right? So, below you’ll find everything you need to know if you ever decide to make a living out of being the modern ninja that you already are.\n\nHere’s a pretty average job description that describes the work of a penetration tester. It contains a general description, requirements, additional information and qualifications, written in a formal manner.\n\nJob Description #1\n\nWork as part of a penetration testing team, taking direction from team lead(s) and executing directives in a thorough and timely fashion.\n• Perform network and application penetration testing using combination of automated and manual exploitation and creative thinking; analyze results to determine false positives and provide actionable mitigations.\n• Report vulnerabilities identified during engagements with possible solutions.\n\nRequirements:\no A solid understanding of network penetration techniques, tools, and methodologies.\no Broad expertise with multiple operating systems such as Linux and Windows, and network services.(HTTP, Databases, WiFi etc.) and their inherent security issues.\no Provide input on security controls to prevent an attack from infiltrating company information or jeopardizing programs.\no Conducting Hands-On Web application penetration test.\no Ability to utilize common penetration testing tools: Metasploit, Nessus, nMap, AppScan, and BurpSuite.\no Previous network penetration testing methods.\no Previous experience writing testing assessment reports.\n\nAdditional:\n– Knowledge of TCP/ IP protocols and networking architectures.\n– Knowledge of Web applications, databases, and Web server design and implementation.\n– Knowledge of security development standards and projects, e.g. OWASP.\n– Knowledge of open security testing standards and projects, e.g. NVD-CVE.\n– Possession of excellent oral and written communication skills. ”\n\nRequired:\n– Bachelor’s Degree in any computer related field.\n– English: Fluent\n\nPreferred\n– At least 2 years experience in Network Penetration Testing, Vulnerablity Analysis, Application Penetration Testing.\n\nQuite self explanatory, you should be familiar with most, if not all of the technical terms by now. Penetration testers, usually work in teams of 4-5. There’s a project leader that coordinates with the client who’s seeking a security assessment on their network or product and team members who specialize in different areas of penetration testing. Automated, manual, application, web, network -penetration testing, to name a few. A team is given a product or a network, usually with no information and their job is to virtually break in and see how it goes. All vulnerabilities are checked for and reported (ideally), all loopholes and anything exploitable is also checked. A important part of the job is writing reports of the penetration tests that have been performed. These reports should contain a human-readable summary of the pentest for the client and a full description for the technical staff.\n\nMost of the times, clients also seek advice and direction as to how to fix the vulnerabilities, if any are found. These may range from simply updating a software, piece of equipment to reworking the entire network layout and protocols. Most importantly, the pentesting team is being trusted that they will not attempt any exploits and should simply report the vulnerabilities. They are usually given an end point,i.e. if they find something that could be confidential they must not even attempt to go further.\n\nBelow is another job description for working as a penetration tester. Almost the same as above, at the first sight, but it contains subtle differences and describes the job from another angle.\n\nJob Description #2\n\nJob Summary:\nSecurity consultant with a proven background in pen testing and vulnerability assessment domain to provide effective security analysis and risk mitigation.\n\nClient Responsibilities:\n- Perform network attack and penetration testing\n- Perform internal and external vulnerability assessments\n- Perform web application penetration testing (Black box, Grey box and White box)\n- Use of various methodologies used in Attack and Penetration testing\n- Develop and test exploits and scripts (PERL/Python/Bash Scripting)\n- Perform log analysis, WASP, Secure SDLC, web application and security configuration reviews, code reviews\n- Perform testing using OWASP and Secure SDLC standards\n- Perform IT infrastructure/ Application Security configuration reviews\n- Interface with both external internal clients\n- Manage task allocation, ensuring quality of the deliverables in line with industry standards and best practices.\n\nPeople Responsibilities:\n- Should be a good team player.\n- Excellent Verbal and written communication skill.\n- Should interface well with internal and external clients\n- Strong analytical/problem solving skills.\n- Should come up with innovative and smart ways of doing work, without compromising on quality\n- Should prioritize and manage multiple tasks.\n- Understand and follow workplace policies and procedures\n\nQualifications:\nKnowledge and Skills Requirements:\n- 2+ years of experience in penetration testing and vulnerability assessments.\n- Good knowledge of OWASP and Secure SDLC standards\n- Experience in using scanning tools and exploits.\n- Experience in performing security code reviews.\n- In- depth Knowledge of Linux administration, TCP/IP, Network Security.\n- Experience in performing security configuration reviews of IT Infrastructure and security devices, OS, Databases etc.\n- Good understanding of networking protocols and application communications\n- Good communication skills both written and verbal.\n- Good Presentation and customer interaction skills\n- Good analytical capability\n- Should be able to deliver and work with changes in the market.\n- Ability to build and maintain relationships with a diverse group of clients and internal teams\n- Preferred certifications : CISSP, OSCP, OSCE, GPEN, CEH, RHCE, CCNA, CCNP, MCS\n\n\nAs you can see, this one goes deeper. The last line lists some preferred certifications. These are all courses or exams that a hacker needs to take to prove that s/he does indeed possess the required skills. CEH – ‘Certified Ethical Hacker’ is one of the most popular ones. Almost no bachelor’s course contains anything above an elementary treatment of network or software security. These certifications are an attempt to unify the process of becoming an ethical hacker but as of now majority of the hackers are self taught. I suppose that’s the way it should be. Knowledge without passion is useless and if there is passion, knowledge will always follow.\n\nYou’ll notice the job description lists more than once, the requirement of good people skills. That’s because most of the clients that we work with have little to no knowledge of penetration testing. It is the responsibility of the pentesters to dumb it down for the client as well as provide proper steps for his staff to follow in order to make their products cyber-safe.\n\nSo, if you ever decide to give professional pentesting a try, the requirements in the job descriptions above will be an excellent starting point. Most of the jobs these days, require certification of some form so it’s a good idea to search for the ones that best fit your goals. Other than that, even as a hacking hobbyist the process of expanding your knowledge is endless. Once again, I suppose that’s the way it should be. After all, the day we stop learning is the day we stop living."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

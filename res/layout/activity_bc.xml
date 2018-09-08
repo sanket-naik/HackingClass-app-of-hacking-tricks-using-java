@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+ xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2152dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="DDOS Attack"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbc" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="What we’ll attempt to do in this article is similar to testing a nuclear bomb (okay, not really). But still, there’s no way to tell exactly what will happen, other than to blast the damn thing because more often than not that’s just the way it is with DDOSing.\n\nTo refresh your memory, DDOS Attacks involve saturating the target machine with external communications requests (packets) so much so that it cannot respond to legitimate traffic. In most cases, this presents an obvious obstacle – Where to get massive amounts of bandwidth? By definition, servers are designed to handle huge quantities of traffic and when we are trying to attack it with traffic, it’s going to be very difficult (or is it?).\n\nThe usual way to DDOS is to slowly build up a botnet for example, by spreading a trojan (or RAT) that installs the DDOSing software and sets up a backdoor listener. When the infection has spread to thousands of systems, the hacker then activates the trojan and the DDOSing begins. Clearly, breaking into several thousand systems is not very legal or ethical, so even if some genuine website administrator wants to perform a dummy DDOS just to see what will happen and what’s the best way to handle it, they won’t be able to do it. This is another reason why small websites particularly are very vulnerable to attack – they don’t practice because apparently the only way to practice is illegal. So, when they are hit by an actual DDOS they simply don’t stand a chance. So, below we take a look at a possible solution that works for both good and bad guys. An alternative practice methods for website admins and a shortcut for DDOSing for hackers.\n\nThe method described below is quite unpopular. In a sentence, we use online services to DDOS for us. These are called “stressers” or “booters” and are simply services which provide large internet bandwidth for the purposes of simulating a DDOS attack. Before moving on, some of the websites mentioned below do offer trials but most of them are fully unlocked only after a payment. So, these may be useful mainly for serious networking administrators or website owners only.\n\nClearly, doing an actual BlackHat DDOS using this is very much possible if done correctly. But that would require using a VPN or TOR browser to hide your identity. Even with that, since you would have to make a payment, it could potentially lead back to you making this a very dangerous alternative if not done exactly right. Hence, I recommend using this method only for what it’s meant for, as simply fooling around can get you into very serious legal trouble.\n\nBelow you can see the names of a few well known stressers and booters and the links to their websites.\n\n#1: Power Stresser – http://www.powerstresser.com (60GB/s of Power)(Stop Button)(Instant)(Skype Resolvers)\n#2: Titanium Stresser – http://titaniumstresser.net/ (Powerful)(Up for 3 years)(Best Price)(Great Support)\n#3: Legion Stresser – http://legion.cm/ (Max Power) (Max Time)\n\nFor some reasons, the majority of these websites appear quite dull on first look. Perhaps they don’t want to attract a lot of attention. Anyways, In most of the above websites you’ll simply see a login page with a “Register” option. So, pretty much the only way to get inside is to make an account. Pick anyone and create an account. (Again, this tutorial is mainly for online service/website owners who want to make sure their website is well protected) Once you’ve registered for the first time. You will see several packages of boot time and strength. Whether you’re trying to DDOS someone else (which you shouldn’t) or your own online website or service, I recommend having several (2-3) booters or Stressers with moderate time instead of just 1 large DDOSer.\n\nOn The websites you will see a control panel-like window, where you can initiate your DDOS Attacks after selecting a package. To DDOS a home connection or a server, you will first need the (host) IP address. Many Booters Contain a built in Skype resolver and Domain Resolver. For “Port” option, the usual choice is Port 80 (Directed at home modems).\n\nYou will then be able to set your Boot time anywhere from 0 to the maximum time you paid for. Generally, UDP(User Datagram Protocol) is used for targeting a PC. For website and larger servers, SSYN attack is usually used which is considerably more powerful. You can think of these as DDOS attacks in which different types of optimal requests are sent for different situations and targets. Anything more than this will get a bit too technical than required here.\n\nSo that’s that for configuring and optimizing the DDOS attack. After this you will be able to start your DDOS attack as and when you please. Below you will find some useful relevant information that is frequently required for DDOSing using stressers and/or booters:\n\nSkype Beta Resolver – http://www.iSkypeResolve.com\n\nOther Ports:\n(Home Connections)\n53 – DNS Port\n80 – Default Internet Port\n\n(Xbox Connections)\n80 – Default Internet Port\n88 – Authentication Port\n3074 – Xbox Default Port\n\n(Web Servers)\n21 – FTP Port\n25 – SMTP/Mail\n53 – DNS Port/Nameserver\n80 – Default Internet Port\n3306 – MySQL Port"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

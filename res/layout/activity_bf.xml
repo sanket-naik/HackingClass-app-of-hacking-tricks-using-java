@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_reading"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="com.sanki.hackingclass.Ba" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2679dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Learn Programming"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bbf" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="When it comes to computers and everything related to them, programming is the mind and body, heart and soul. Without software, any piece of hardware is nothing but a random collection of metal and plastic. But with a beautiful stream of 1’s and 0’s it can almost literally be pumped full of life. Everything we see and everything we do on our mobiles and computers and really every fancy new gadgets these days, was created by someone, somewhere who night after night tirelessly wrote a program in code to create something wonderful.\n\nWhat’s the point of telling you all this?\nProgramming is not for the faint hearted. It takes effort (but not that much). Truth be told, lines of code is a very poor measure for difficulty. It’s like measuring a person’s success by counting the number of words they’ve spoken, ridiculous and not really related. The point of all that was to prove wrong the ones who overstate and exaggerate the difficuty of learning programming. It’s almost always pictured as something unbelievably boring, dry, dull and plain geeky. According to movies, a programmer is a fat nerdy guy with huge spectacles sitting in front of the computer mindlessly typing away while all that s/he accomplishes is something facetious and laughable. This could not be more wrong. Undoubtedly, programming can only be done by someone who thoroughly enjoys it. Being a programmer myself, I can honestly say there’s simply no way to describe it. It’s different for everyone which is why to truly find out if programming is for you, you will just have to try it out for yourself.\n\nProgramming teaches you how to think. It teaches you how to solve any problem, whether it is considered possible or not is irrelevant.\n\n Moving On, let’s take a look at how exactly programming can help a hacker. First of all, it is what differentiates you from script kiddies. If the only hacks someone can do are made by others, then that person really cannot be called a “Hacker”. If you ever tried googling about hacking and gave up soon without finding an answer, you’re not alone. The main reason most hackers are not big on helping others is because they start getting bombarded by noobs asking them to hack (fb) accounts and explain something so basic and silly that they just give up and start ignoring them. Programming helps you understand how everything in your smarter idiot box comes together. It gives you better knowledge about how to identify and solve any problems by yourself. By knowing programming, you get a better understanding about how vulnerabilities and exploits work. Most importantly you can code your own tools, scripts, exploits, shell codes, entire applications and modify existing ones according to your own needs. No need to learn it from others, you can simply make it your own. You get to explore and pioneer in uncharted territory.\n\n\n\nThe finel destination is the same, below are a few of the different paths (languages) for a programming beginner to follow. It is generally advised to stick to mainstream languages when beginning and these are some of them:\n\n*C++, Java, C# : These are the most used high level general purpose languages. Most of what you’ll ever do on a computer would not be possible without these. Almost every software, tools, applications is made by these. You are bound to run into these one day or another. They require a fair amount of effort but yield the greatest rewards. These are generally not recommended as a first language. My first language was C++, and it made learning every consequent language much easier. Once more, it’s up to you.\n\n*HTML/SQL/XML : These are so easy, they’re almost not even worth learning. But they offer great rewards for very little effort, something you’ll never hear in the rest of the programming world. Actually, you can learn these just to tell people that you know so many computer languages. You can easily absorb the basics of these three, for example, in under a day. SQL is particularly important for hackers as it can, in some cases provide an easy way into a server’s database (SQL injection) – Definitely worth knowing, considering we’re all lazy and proud. (JavaScript also deserves a mention here, but it’s a wee bit bigger and deeper)\n\n*Python, Ruby : These are two more quite powerful languages. Python is pretty much the best and most widely used scripting language out there, although it can be used generally also. Ruby is another general purpose language, MetaSploit is coded in Ruby.\n\n Programming can only be caught, never taught. Learning programming encompasses two main things, reading and doing, with greater emphasis on the latter. You can only know what to do by reading, but you can learn only by doing. Even when you may get stuck somewhere or not fully understand something, doing it yourself will always clear all your doubts. I myself learned most of the programming I know through different sources on the internet and tons of books. Below are some of the best ones, I’ve come across yet: (categorized by languages)\n\nBefore starting, a few special mentions:\n\n• http://www.w3schools.com/\nWithout a doubt, this is one of the best websites out there to learn programming. If you want to get into web development, there’s no better place to start than W3Schools. HTML, CSS, JavaScript, SQL, PHP, XML, JQuery – You name it, this website has an abundance of learning material for vast number of programming languages and it’s tailor made for beginners.\n\n• http://www.learnstreet.com/\nA relatively young website, but it has a lot to offer. It has highly interactive free online courses on Python, Ruby and JavaScript (yet). Again, a great place for beginners to start. It presents examples and questions that the user has to actively participate in and solve problems in the browser itself.\n\n• http://teamtreehouse.com/\nA very well made website, it has tons of “projects” in different programming languages. Each of these projects are a compilation of videos in which a person commentates or teaches you about completing the project, what all you need to do and how to do it. Clearly, they’ve put a lot of effort into it and it did come out great.\n\nOther than these, there are many more websites which offer great courses and material for learning programming. A few of these are mentioned below according to languages:\n\n*Multiple Languages:\n• https://www.bitcast.io/\n• https://www.udacity.com/\n• http://www.codecademy.com/\n• https://www.codeschool.com/\n\n*Java\n• http://www.learneroo.com/\n• http://funprogramming.org/\n\n*Javascript\n• http://codehs.com/\n• http://jsdares.com/\n\n*Ruby\n• https://rubymonk.com/\n• http://hackety.com/\n• http://tryruby.org/\n\n*HTML, CSS, JAVASCRIPT\n• http://css-tricks.com/\n• http://www.codeavengers.com/\n• https://tutsplus.com/  "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b4b4b" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rateintxt2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rateintxt" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+          <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</ScrollView>
